@@ -31,7 +31,7 @@ export const organizationSchema = {
     sameAs: [LINKEDIN_URL],
   },
   telephone: '+1-519-803-3330',
-  email: 'lawrence@bailygroup.com',
+  email: 'lawrence@bailygrp.com',
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
@@ -43,7 +43,7 @@ export const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+1-519-803-3330',
-    email: 'lawrence@bailygroup.com',
+    email: 'lawrence@bailygrp.com',
     contactType: 'sales',
     areaServed: 'CA',
     availableLanguage: ['English'],

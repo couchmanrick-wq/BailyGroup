@@ -119,7 +119,7 @@ export default function Layout({
               </svg>
               <span>519.803.3330</span>
             </a>
-            <a href="mailto:lawrence@bailygroup.com" className={styles.topBarLink}>
+            <a href="mailto:lawrence@bailygrp.com" className={styles.topBarLink}>
               <svg
                 className={styles.topBarIcon}
                 viewBox="0 0 24 24"
@@ -133,7 +133,7 @@ export default function Layout({
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 6-10 7L2 6" />
               </svg>
-              <span>lawrence@bailygroup.com</span>
+              <span>lawrence@bailygrp.com</span>
             </a>
           </div>
           <div className={styles.topBarSocial}>
@@ -247,7 +247,7 @@ export default function Layout({
                 </svg>
                 Call 519.803.3330
               </a>
-              <a href="mailto:lawrence@bailygroup.com" className={`${styles.ctaButton} ${styles.ctaButtonEmail}`}>
+              <a href="mailto:lawrence@bailygrp.com" className={`${styles.ctaButton} ${styles.ctaButtonEmail}`}>
                 <svg className={styles.ctaButtonIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 6-10 7L2 6" />
@@ -305,12 +305,12 @@ export default function Layout({
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:lawrence@bailygroup.com" className={styles.footerContactItem}>
+                    <a href="mailto:lawrence@bailygrp.com" className={styles.footerContactItem}>
                       <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <rect x="2" y="4" width="20" height="16" rx="2" />
                         <path d="m22 6-10 7L2 6" />
                       </svg>
-                      lawrence@bailygroup.com
+                      lawrence@bailygrp.com
                     </a>
                   </li>
                   <li className={styles.footerContactItem}>

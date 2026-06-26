@@ -1,5 +1,5 @@
 // Cloudflare Pages Function: handles POST /api/contact and emails the
-// enquiry to lawrence@bailygroup.com via the Resend API.
+// enquiry to lawrence@bailygrp.com via the Resend API.
 //
 // Setup required in Cloudflare Pages (Settings → Environment variables):
 //   RESEND_API_KEY  — secret from https://resend.com (verify bailygroup.com)
@@ -50,7 +50,7 @@ export async function onRequestPost(context: ContactContext): Promise<Response> 
     return json({ error: 'Please enter a valid email address.' }, 400)
   }
   if (!env.RESEND_API_KEY) {
-    return json({ error: 'The contact form is not configured yet. Please email lawrence@bailygroup.com directly.' }, 500)
+    return json({ error: 'The contact form is not configured yet. Please email lawrence@bailygrp.com directly.' }, 500)
   }
 
   const res = await fetch('https://api.resend.com/emails', {
@@ -61,7 +61,7 @@ export async function onRequestPost(context: ContactContext): Promise<Response> 
     },
     body: JSON.stringify({
       from: 'The Baily Group Website <noreply@bailygroup.com>',
-      to: ['lawrence@bailygroup.com'],
+      to: ['lawrence@bailygrp.com'],
       reply_to: email,
       subject: `New vehicle wishlist from ${name}`,
       text: [
@@ -81,7 +81,7 @@ export async function onRequestPost(context: ContactContext): Promise<Response> 
 
   if (!res.ok) {
     return json(
-      { error: 'Sorry, your message could not be sent. Please email lawrence@bailygroup.com directly.' },
+      { error: 'Sorry, your message could not be sent. Please email lawrence@bailygrp.com directly.' },
       502,
     )
   }

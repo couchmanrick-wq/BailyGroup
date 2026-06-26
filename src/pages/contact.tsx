@@ -198,7 +198,7 @@ export default function Contact() {
               </svg>
               <div>
                 <span className={styles.contactDetailLabel}>Email</span>
-                <a href="mailto:lawrence@bailygroup.com" className={styles.contactLink}>lawrence@bailygroup.com</a>
+                <a href="mailto:lawrence@bailygrp.com" className={styles.contactLink}>lawrence@bailygrp.com</a>
               </div>
             </div>
 
