@@ -102,6 +102,18 @@ export default function Home() {
         </div>
       </div>
 
+      <section className={styles.showcase}>
+        <img
+          src="/images/lawrence-sold-vehicle-1.webp"
+          alt="Lawrence Baily delivering a vehicle to a happy client"
+          className={styles.showcaseImage}
+          width={1448}
+          height={1086}
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
+
       <section id="services" className={styles.section}>
         <h2 className={styles.sectionTitle}>How we can help</h2>
         <p className={styles.sectionText}>
