@@ -55,19 +55,6 @@ export default function About() {
       </section>
 
       <section className={styles.section}>
-        <div className={styles.aboutGrid}>
-          <img
-            src="/images/lawrence-sold-vehicle-1.webp"
-            alt="Recently sold vehicle handled by Lawrence Baily"
-            className={styles.aboutImageFull}
-            width={1200}
-            height={900}
-            loading="lazy"
-          />
-        </div>
-      </section>
-
-      <section className={styles.section}>
         <div className={styles.story}>
           <span className={styles.storyEyebrow}>A recent win</span>
           <p className={styles.storyQuote}>
@@ -158,6 +145,17 @@ export default function About() {
             </p>
           </article>
         </div>
+      </section>
+
+      <section className={styles.soldVehicleSection}>
+        <img
+          src="/images/lawrence-sold-vehicle-1.webp"
+          alt="Recently sold vehicle handled by Lawrence Baily"
+          className={styles.soldVehicleImage}
+          width={1200}
+          height={900}
+          loading="lazy"
+        />
       </section>
     </Layout>
   )
