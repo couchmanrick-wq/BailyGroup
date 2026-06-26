@@ -321,15 +321,16 @@
   gap: 2.5rem;
 }
 
-/* Showcase image (sold-vehicle photo) — fills the content section */
+/* Showcase image (sold-vehicle photo) — matches the hero cards width above it */
 .showcase {
   padding: 2.5rem 0 0;
 }
 
 .showcaseImage {
   display: block;
-  width: 100%;
+  width: min(640px, calc(100% - 2rem));
   height: auto;
+  margin: 0 auto;
   border-radius: 1rem;
 }
 
