@@ -99,6 +99,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.section}>
+        <div className={styles.whyGrid}>
+          <div>
+            <h2 className={styles.whyHeading}>Why busy people hand us the keys</h2>
+            <p className={styles.whyText}>
+              Between work, family, and everything in between, nobody has a weekend to lose at dealerships. We take the entire vehicle hunt off your plate — sourcing, financing, test drives, and delivery — and hand back the hours you would rather spend elsewhere.
+            </p>
+            <p className={styles.whyText}>
+              Whether you are a working professional, a growing family, or a business running vehicles across Kitchener, Waterloo, Cambridge, and Guelph, you get the right vehicle without the friction.
+            </p>
+            <p className={styles.whyLead}>Here is what working with The Baily Group actually feels like:</p>
+            <ul className={styles.whyList}>
+              {[
+                'Hours back in your week',
+                'Straight talk, never a sales pitch',
+                'Matched to how you actually drive',
+                'One trusted point of contact, start to finish',
+              ].map((item) => (
+                <li key={item} className={styles.whyItem}>
+                  <svg className={styles.whyCheck} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m8 12 2.5 2.5L16 9" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <img
+            src="/images/about-car.jpg"
+            alt="A collection of premium vehicles"
+            className={styles.whyImage}
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       <section id="about" className={styles.section}>
         <h2 className={styles.sectionTitle}>About The Baily Group</h2>
         <p className={styles.sectionText}>
