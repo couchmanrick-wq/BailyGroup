@@ -266,9 +266,12 @@ export default function Layout({
             </div>
 
             <hr className={styles.footerDivider} />
-            <p className={styles.footerCopyright}>
-              Copyright © {new Date().getFullYear()} The Baily Group. All rights reserved.
-            </p>
+            <div className={styles.footerBottom}>
+              <p className={styles.footerCopyright}>
+                Copyright © {new Date().getFullYear()} The Baily Group. All rights reserved.
+              </p>
+              <p className={styles.footerCredit}>Design by: Speed River Media</p>
+            </div>
           </div>
         </footer>
       </main>
