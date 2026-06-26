@@ -9,9 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(247, 248, 251, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(247, 248, 251, 0.98);
   border-bottom: 1px solid rgba(148, 163, 184, 0.18);
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
 }
@@ -177,7 +175,6 @@
   position: relative;
   align-self: end;
   justify-self: center;
-  animation: heroSlideInRight 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes heroSlideInRight {
@@ -263,6 +260,10 @@
 }
 
 @media (min-width: 860px) {
+  .heroDarkMedia {
+    animation: heroSlideInRight 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
   .heroDarkGrid {
     grid-template-columns: 1.1fr 0.9fr;
     padding: 3.5rem 0 0;
@@ -389,6 +390,8 @@
 
 .section {
   padding: 3rem 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 620px;
 }
 
 .sectionTitle {

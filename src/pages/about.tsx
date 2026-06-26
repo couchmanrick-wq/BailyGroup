@@ -12,6 +12,10 @@ const aboutPageSchema = {
   mainEntity: { '@id': `${SITE_URL}/#lawrence` },
 }
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 export default function About() {
   return (
     <Layout

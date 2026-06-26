@@ -165,6 +165,7 @@ export default function Layout({
                 className={styles.logoMark}
                 width={112}
                 height={112}
+                decoding="async"
               />
             </Link>
             <nav className={styles.nav} aria-label="Primary navigation">
@@ -223,6 +224,8 @@ export default function Layout({
                   className={styles.footerBrandLogo}
                   width={96}
                   height={96}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <p className={styles.footerBlurb}>
                   The Baily Group: expert car buying concierge service, personalized auto buying help, dealer negotiation, lease guidance, financing, and vehicle sourcing across Kitchener, Waterloo, Cambridge, Guelph, and Southwestern Ontario.

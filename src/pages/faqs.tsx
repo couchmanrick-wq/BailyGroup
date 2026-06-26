@@ -45,6 +45,10 @@ const faqs = [
   },
 ]
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 export default function Faqs() {
   return (
     <Layout

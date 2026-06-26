@@ -21,6 +21,10 @@ const services = [
   },
 ]
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 export default function Home() {
   return (
     <Layout
@@ -52,7 +56,8 @@ export default function Home() {
               alt="Lawrence Baily of The Baily Group"
               width={600}
               height={600}
-              loading="eager"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -136,6 +141,7 @@ export default function Home() {
             alt="A collection of premium vehicles"
             className={styles.whyImage}
             loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
@@ -148,6 +154,7 @@ export default function Home() {
               alt="A premium vehicle on the open road"
               className={styles.fitImage}
               loading="lazy"
+              decoding="async"
             />
             <p className={styles.fitCaption}>The vehicle-buying experience you deserve</p>
           </div>
@@ -193,6 +200,7 @@ export default function Home() {
             width={600}
             height={600}
             loading="lazy"
+            decoding="async"
           />
           <div className={styles.card}>
             <h3 className={styles.cardTitle}>A better way to buy a vehicle</h3>
