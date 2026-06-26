@@ -1,11 +1,28 @@
 import Layout from '../components/Layout'
+import { SITE_URL, personSchema } from '../lib/seo'
 import styles from '../styles/Home.module.css'
+
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': `${SITE_URL}/about#aboutpage`,
+  name: 'About The Baily Group',
+  url: `${SITE_URL}/about`,
+  about: { '@id': `${SITE_URL}/#organization` },
+  mainEntity: { '@id': `${SITE_URL}/#lawrence` },
+}
 
 export default function About() {
   return (
     <Layout
       title="About — The Baily Group"
       description="Meet Lawrence Baily and The Baily Group, helping individuals and businesses buy and lease vehicles across Southwestern Ontario."
+      path="/about"
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about' },
+      ]}
+      schema={[aboutPageSchema, personSchema]}
     >
       <section className={styles.section}>
         <h1 className={styles.title}>About The Baily Group</h1>

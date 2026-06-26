@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import { offerCatalogSchema } from '../lib/seo'
 import styles from '../styles/Home.module.css'
 
 const services = [
@@ -25,6 +26,9 @@ export default function Home() {
     <Layout
       title="The Baily Group — Vehicle Buying & Leasing in Southwestern Ontario"
       description="Lawrence Baily and The Baily Group help individuals and businesses buy and lease vehicles across Southwestern Ontario."
+      path="/"
+      breadcrumbs={[{ name: 'Home', href: '/' }]}
+      schema={[offerCatalogSchema(services)]}
     >
       <section className={styles.heroDark}>
         <div className={styles.heroDarkGrid}>
@@ -187,7 +191,7 @@ export default function Home() {
 
       <section className={styles.section}>
         <div className={styles.card}>
-          <h3 className={styles.cardTitle}>Referral partners welcome</h3>
+          <h2 className={styles.cardTitle}>Referral partners welcome</h2>
           <p className={styles.cardText}>
             Much of our best work comes through trusted partners. If you&apos;re an insurer, realtor, or operations manager with clients who need a vehicle handled the right way, we&apos;d love to work together.
           </p>

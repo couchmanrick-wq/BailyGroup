@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import { faqSchema } from '../lib/seo'
 import styles from '../styles/Home.module.css'
 
 const faqs = [
@@ -24,7 +25,7 @@ const faqs = [
   },
   {
     question: 'What area do you serve?',
-    answer: 'We serve individuals and businesses across Southwestern Ontario.',
+    answer: 'Lawrence Baily is based in Guelph, Ontario, and serves individuals and businesses across much of southwestern Ontario — including Kitchener, Waterloo, Cambridge, and Guelph.',
   },
   {
     question: 'How do I get started?',
@@ -36,7 +37,13 @@ export default function Faqs() {
   return (
     <Layout
       title="FAQs — The Baily Group"
-      description="Answers to common questions about buying, leasing, financing, and sourcing vehicles with The Baily Group in Southwestern Ontario."
+      description="Answers to common questions about buying, leasing, financing, and sourcing vehicles with The Baily Group in Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario."
+      path="/faqs"
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'FAQs', href: '/faqs' },
+      ]}
+      schema={[faqSchema(faqs)]}
     >
       <section className={styles.section}>
         <h1 className={styles.title}>Frequently asked questions</h1>
@@ -46,12 +53,17 @@ export default function Faqs() {
       </section>
 
       <section className={styles.section}>
-        <div className={styles.grid}>
+        <div className={styles.faqList}>
           {faqs.map((faq) => (
-            <article key={faq.question} className={styles.card}>
-              <h2 className={styles.cardTitle}>{faq.question}</h2>
-              <p className={styles.cardText}>{faq.answer}</p>
-            </article>
+            <details key={faq.question} className={styles.faqItem}>
+              <summary className={styles.faqQuestion}>
+                <span>{faq.question}</span>
+                <svg className={styles.faqChevron} viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <p className={styles.faqAnswer}>{faq.answer}</p>
+            </details>
           ))}
         </div>
       </section>

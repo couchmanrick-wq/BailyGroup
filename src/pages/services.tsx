@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import { offerCatalogSchema } from '../lib/seo'
 import styles from '../styles/Home.module.css'
 
 const services = [
@@ -25,6 +26,12 @@ export default function Services() {
     <Layout
       title="Services — The Baily Group"
       description="Buy, lease, finance, and source vehicles with The Baily Group. Personal and commercial vehicle services across Southwestern Ontario."
+      path="/services"
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'Services', href: '/services' },
+      ]}
+      schema={[offerCatalogSchema(services)]}
     >
       <section className={styles.section}>
         <h1 className={styles.title}>Services</h1>

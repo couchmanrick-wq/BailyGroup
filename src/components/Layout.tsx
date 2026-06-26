@@ -1,11 +1,33 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import type { ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import styles from '../styles/Home.module.css'
+import {
+  DEFAULT_OG_IMAGE,
+  JsonLd,
+  SITE_NAME,
+  SITE_URL,
+  breadcrumbSchema,
+  organizationSchema,
+  webPageSchema,
+  websiteSchema,
+  type Crumb,
+} from '../lib/seo'
 
 type LayoutProps = {
   title: string
   description: string
+  /** Route path for canonical URL and structured data, e.g. "/services". */
+  path: string
+  /** Breadcrumb trail; first item should be Home. */
+  breadcrumbs?: Crumb[]
+  /** Page-specific JSON-LD objects (FAQPage, HowTo, OfferCatalog, etc.). */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  schema?: Record<string, any>[]
+  /** Plain-text title for OG/structured data (defaults to `title`). */
+  ogTitle?: string
+  /** Social/OG image URL. */
+  ogImage?: string
   children: ReactNode
 }
 
@@ -26,15 +48,66 @@ const footerLinks = [
   { href: '/faqs', label: 'FAQs' },
 ]
 
-export default function Layout({ title, description, children }: LayoutProps) {
+export default function Layout({
+  title,
+  description,
+  path,
+  breadcrumbs,
+  schema,
+  ogTitle,
+  ogImage = DEFAULT_OG_IMAGE,
+  children,
+}: LayoutProps) {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const canonical = `${SITE_URL}${path}`
+  const socialTitle = ogTitle ?? title
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={SITE_NAME} />
+        <meta property="og:title" content={socialTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:locale" content="en_CA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={socialTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
       </Head>
-      <div className={styles.siteHeader}>
+
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={websiteSchema} />
+      <JsonLd
+        data={webPageSchema({
+          path,
+          name: socialTitle,
+          description,
+          hasBreadcrumb: Boolean(breadcrumbs && breadcrumbs.length > 0),
+        })}
+      />
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <JsonLd data={breadcrumbSchema(path, breadcrumbs)} />
+      )}
+      {schema?.map((item, index) => (
+        <JsonLd key={index} data={item} />
+      ))}
+
+      <div className={`${styles.siteHeader} ${scrolled ? styles.siteHeaderScrolled : ''}`}>
         <div className={styles.topBar}>
         <div className={`${styles.topBarInner} container`}>
           <div className={styles.topBarContact}>

@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.css'
 
@@ -55,50 +54,18 @@ const howToJsonLd = {
   })),
 }
 
-const businessJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'AutoDealer',
-  name: 'The Baily Group',
-  description:
-    'Vehicle buying, leasing, financing, and sourcing concierge led by Lawrence Baily, based in Guelph and serving Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario.',
-  founder: 'Lawrence Baily',
-  email: 'lawrence@bailygroup.com',
-  telephone: '+1-519-803-3330',
-  url: 'https://bailygroup.pages.dev/how-it-works',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Guelph',
-    addressRegion: 'ON',
-    addressCountry: 'CA',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Guelph' },
-    { '@type': 'City', name: 'Kitchener' },
-    { '@type': 'City', name: 'Waterloo' },
-    { '@type': 'City', name: 'Cambridge' },
-    { '@type': 'AdministrativeArea', name: 'Southwestern Ontario, Canada' },
-  ],
-  sameAs: ['https://www.linkedin.com/in/lawrencebaily/'],
-}
-
 export default function HowItWorks() {
   return (
     <Layout
       title="How It Works — The Baily Group | Vehicle Buying & Leasing in Kitchener, Waterloo, Cambridge & Guelph"
       description="How The Baily Group works: a simple 5-step process to buy, lease, finance, or source the right vehicle in Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario — no dealership hassle. Led by Lawrence Baily of Guelph."
+      path="/how-it-works"
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'How It Works', href: '/how-it-works' },
+      ]}
+      schema={[howToJsonLd]}
     >
-      <Head>
-        <link rel="canonical" href="https://bailygroup.pages.dev/how-it-works" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
-        />
-      </Head>
-
       <section className={styles.section}>
         <h1 className={styles.title}>How It Works</h1>
         <p className={styles.leadAnswer}>

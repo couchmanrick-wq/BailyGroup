@@ -20,6 +20,24 @@
   background-color: #2d3748;
   color: #e2e8f0;
   font-size: 0.9rem;
+  max-height: 5rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+/* Shrink-on-scroll: hide the contact bar and reduce the logo/padding */
+.siteHeaderScrolled .topBar {
+  max-height: 0;
+  opacity: 0;
+}
+
+.siteHeaderScrolled .header {
+  padding: 0.6rem 0;
+}
+
+.siteHeaderScrolled .logoMark {
+  width: 4rem;
+  height: 4rem;
 }
 
 .topBarInner {
@@ -269,6 +287,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 0;
+  transition: padding 0.3s ease;
 }
 
 .logo {
@@ -286,6 +305,7 @@
   height: 7rem;
   border-radius: 50%;
   object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .nav {
@@ -521,6 +541,55 @@
   object-fit: cover;
   border-radius: 1.5rem;
   box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+}
+
+/* FAQ accordion */
+.faqList {
+  display: grid;
+  gap: 1rem;
+  max-width: 52rem;
+}
+
+.faqItem {
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqChevron {
+  flex-shrink: 0;
+  color: #f5a623;
+  transition: transform 0.25s ease;
+}
+
+.faqItem[open] .faqChevron {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  margin: 0;
+  padding: 0 1.5rem 1.4rem;
+  color: #475569;
+  line-height: 1.75;
 }
 
 .steps {
