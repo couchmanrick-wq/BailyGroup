@@ -2,6 +2,20 @@
   min-height: 100vh;
 }
 
+.siteHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerBar {
+  background: rgba(247, 248, 251, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
 .topBar {
   background-color: #2d3748;
   color: #e2e8f0;

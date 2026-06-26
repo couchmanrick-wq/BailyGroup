@@ -34,7 +34,8 @@ export default function Layout({ title, description, children }: LayoutProps) {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={styles.topBar}>
+      <div className={styles.siteHeader}>
+        <div className={styles.topBar}>
         <div className={`${styles.topBarInner} container`}>
           <div className={styles.topBarContact}>
             <a href="tel:+15198033330" className={styles.topBarLink}>
@@ -88,27 +89,29 @@ export default function Layout({ title, description, children }: LayoutProps) {
             </a>
           </div>
         </div>
+        </div>
+        <div className={styles.headerBar}>
+          <header className={`${styles.header} container`}>
+            <Link href="/" className={styles.logo} aria-label="The Baily Group home">
+              <img
+                src="/images/baily-group-logo.webp"
+                alt="The Baily Group"
+                className={styles.logoMark}
+                width={112}
+                height={112}
+              />
+            </Link>
+            <nav className={styles.nav} aria-label="Primary navigation">
+              {navLinks.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </header>
+        </div>
       </div>
       <main className={`${styles.page} container`}>
-        <header className={styles.header}>
-          <Link href="/" className={styles.logo} aria-label="The Baily Group home">
-            <img
-              src="/images/baily-group-logo.webp"
-              alt="The Baily Group"
-              className={styles.logoMark}
-              width={112}
-              height={112}
-            />
-          </Link>
-          <nav className={styles.nav} aria-label="Primary navigation">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </header>
-
         {children}
 
         <footer id="contact" className={styles.siteFooter}>
