@@ -38,8 +38,8 @@ export default function Home() {
         <div className={styles.heroDarkGrid}>
           <div className={styles.heroDarkContent}>
             <span className={styles.heroEyebrow}>Expert. Reliable. Concierge service.</span>
-            <h1 className={styles.heroDarkTitle}>Car buying concierge service for Kitchener, Waterloo, Cambridge, Guelph and beyond.</h1>
-            <p className={styles.heroTagline}>Most people don&apos;t need a vehicle, they need a solution.</p>
+            <h1 className={styles.heroDarkTitle}>Most people don&apos;t need a vehicle, they need a solution.</h1>
+            <p className={styles.heroTagline}>Car buying concierge service for Kitchener, Waterloo, Cambridge, Guelph and beyond.</p>
             <p className={styles.heroDarkSubtitle}>
               Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group get you the right personal or commercial vehicle with expert car dealership negotiation and no wasted weekends.
             </p>
