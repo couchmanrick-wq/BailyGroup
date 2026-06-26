@@ -157,28 +157,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className={`${styles.section} ${styles.contactCard}`}>
-        <h2 className={styles.sectionTitle}>Get in touch</h2>
-        <p className={styles.sectionText}>
-          Tell us what you are looking for and we will help you find it. Reach out to start the conversation.
-        </p>
-        <div className={styles.contactItem}>
-          <span className={styles.contactLabel}>Email</span>
-          <p className={styles.contactValue}>
-            <a href="mailto:lawrence@bailygroup.com" className={styles.contactLink}>lawrence@bailygroup.com</a>
-          </p>
-        </div>
-        <div className={styles.contactItem}>
-          <span className={styles.contactLabel}>Phone</span>
-          <p className={styles.contactValue}>
-            <a href="tel:+15198033330" className={styles.contactLink}>519.803.3330</a>
-          </p>
-        </div>
-        <div className={styles.contactItem}>
-          <span className={styles.contactLabel}>Service Area</span>
-          <p className={styles.contactValue}>Southwestern Ontario</p>
-        </div>
-      </section>
     </Layout>
   )
 }

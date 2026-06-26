@@ -11,6 +11,7 @@ type LayoutProps = {
 
 const navLinks = [
   { href: '/services', label: 'Services' },
+  { href: '/how-it-works', label: 'How It Works' },
   { href: '/about', label: 'About' },
   { href: '/faqs', label: 'FAQs' },
   { href: '/#contact', label: 'Contact' },
@@ -20,6 +21,7 @@ const footerLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
+  { href: '/how-it-works', label: 'How It Works' },
   { href: '/faqs', label: 'FAQs' },
 ]
 
@@ -108,7 +110,7 @@ export default function Layout({ title, description, children }: LayoutProps) {
 
         {children}
 
-        <footer className={styles.siteFooter}>
+        <footer id="contact" className={styles.siteFooter}>
           <div className={styles.siteFooterInner}>
             <div className={styles.footerGrid}>
               <div>
