@@ -183,6 +183,28 @@ export default function Layout({
                 )
               })}
             </nav>
+            <details className={styles.mobileMenu}>
+              <summary className={styles.mobileMenuButton} aria-label="Open navigation menu">
+                <span className={styles.mobileMenuLine} />
+                <span className={styles.mobileMenuLine} />
+                <span className={styles.mobileMenuLine} />
+              </summary>
+              <nav className={styles.mobileNav} aria-label="Mobile navigation">
+                {navLinks.map((link) => {
+                  const isActive = !link.href.includes('#') && router.pathname === link.href
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={isActive ? styles.mobileNavActive : undefined}
+                      aria-current={isActive ? 'page' : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  )
+                })}
+              </nav>
+            </details>
           </header>
         </div>
       <main className={`${styles.page} container`}>

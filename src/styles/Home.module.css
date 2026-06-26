@@ -284,6 +284,7 @@
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -308,12 +309,18 @@
 }
 
 .nav {
-  display: flex;
+  display: none;
   gap: 1.75rem;
   flex-wrap: wrap;
   font-size: 1.1rem;
   font-weight: 600;
   color: #475569;
+}
+
+@media (min-width: 760px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav a:hover {
@@ -326,6 +333,71 @@
 
 .navActive:hover {
   color: #c2aa66;
+}
+
+.mobileMenu {
+  position: relative;
+  display: block;
+}
+
+.mobileMenuButton {
+  display: grid;
+  place-content: center;
+  gap: 0.28rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(71, 85, 105, 0.22);
+  border-radius: 0.55rem;
+  background: #ffffff;
+  color: #2d3748;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobileMenuButton::-webkit-details-marker {
+  display: none;
+}
+
+.mobileMenuLine {
+  width: 1.25rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.mobileNav {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  z-index: 10;
+  display: grid;
+  min-width: 14rem;
+  padding: 0.65rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.16);
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.mobileNav a {
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.5rem;
+}
+
+.mobileNav a:hover,
+.mobileNavActive {
+  background: rgba(194, 170, 102, 0.12);
+  color: #c2aa66;
+}
+
+@media (min-width: 760px) {
+  .mobileMenu {
+    display: none;
+  }
 }
 
 .heroContent {
