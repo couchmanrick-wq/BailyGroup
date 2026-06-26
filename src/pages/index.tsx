@@ -33,7 +33,7 @@ export default function Home() {
       <section className={styles.heroDark}>
         <div className={styles.heroDarkGrid}>
           <div className={styles.heroDarkContent}>
-            <span className={styles.heroEyebrow}>Expert. Reliable. On your side.</span>
+            <span className={styles.heroEyebrow}>Expert. Reliable. Concierge service.</span>
             <h1 className={styles.heroDarkTitle}>If it has four wheels and a license plate, I can help.</h1>
             <p className={styles.heroDarkSubtitle}>
               Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group get you the right personal or commercial vehicle — without spending your weekends at dealerships.
