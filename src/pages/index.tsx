@@ -34,7 +34,13 @@ export default function Home() {
       <main className={`${styles.page} container`}>
         <header className={styles.header}>
           <div className={styles.logo}>
-            <span>BG</span>
+            <img
+              src="/images/baily-group-logo.webp"
+              alt="The Baily Group logo"
+              className={styles.logoMark}
+              width={44}
+              height={44}
+            />
             The Baily Group
           </div>
           <nav className={styles.nav} aria-label="Primary navigation">

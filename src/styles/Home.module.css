@@ -28,16 +28,11 @@
   color: #2f3c86;
 }
 
-.logo span {
-  display: inline-block;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, #2f3c86 0%, #6b7ff2 100%);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-size: 0.9rem;
+.logoMark {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav {
