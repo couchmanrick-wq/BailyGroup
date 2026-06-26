@@ -5,18 +5,26 @@ import styles from '../styles/Home.module.css'
 const services = [
   {
     title: 'Buy',
+    image: '/images/service-buy.webp',
+    imageAlt: 'A luxury sedan',
     description: 'From a daily commuter to a weekend dream car, we find the vehicle that fits, confirm it is priced fairly against the market, and manage every step through to the day you drive it home — no lots, no pressure, no wasted Saturdays.',
   },
   {
     title: 'Lease',
+    image: '/images/service-lease.webp',
+    imageAlt: 'A commercial cargo delivery van',
     description: 'We compare lease programs across manufacturers to land terms that make sense for your kilometres, your timeline, and your cash flow, then explain the fine print in plain English before you ever sign.',
   },
   {
     title: 'Finance',
+    image: '/images/service-finance.webp',
+    imageAlt: 'A luxury sports coupe',
     description: 'Getting approved should not feel like a fight. We line up financing that fits your budget and credit, walk you through the real numbers, and make sure the monthly payment is one you are genuinely comfortable with.',
   },
   {
     title: 'Source',
+    image: '/images/service-source.webp',
+    imageAlt: 'A heavy-duty pickup truck',
     description: 'Have a specific build in mind? We use our dealer and manufacturer network to hunt down exact makes, models, trims, and colours — including allocation-only and hard-to-find vehicles — and bring them to you.',
   },
 ]
@@ -44,6 +52,14 @@ export default function Services() {
         <div className={`${styles.grid} ${styles.services}`}>
           {services.map((service) => (
             <article key={service.title} className={styles.card}>
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                className={styles.serviceImage}
+                width={640}
+                height={360}
+                loading="lazy"
+              />
               <h2 className={styles.cardTitle}>{service.title}</h2>
               <p className={styles.cardText}>{service.description}</p>
             </article>
