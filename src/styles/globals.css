@@ -2,8 +2,8 @@
 :root {
   color-scheme: light;
   font-family: 'Bodoni 72', 'Bodoni 72 Smallcaps', 'Bodoni MT', 'Bodoni Moda', Didot, 'Times New Roman', serif;
-  background-color: #f7f8fb;
-  color: #111827;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -25,8 +25,7 @@ body {
 }
 
 body {
-  background: radial-gradient(circle at top, rgba(67, 56, 202, 0.12), transparent 28%),
-    rgba(247, 248, 251, 1);
+  background: #000000;
 }
 
 img,

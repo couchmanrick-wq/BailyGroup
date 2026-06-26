@@ -1535,3 +1535,212 @@ a.footerContactItem:hover {
     align-self: center;
   }
 }
+
+/* Dark content theme */
+.page,
+.headerBar,
+.topBar,
+.heroDark,
+.siteFooter {
+  background: #000000;
+}
+
+.page {
+  color: #ffffff;
+}
+
+.headerBar {
+  border-bottom-color: rgba(124, 58, 237, 0.32);
+  box-shadow: none;
+}
+
+.nav,
+.mobileNav,
+.footerLink,
+.footerContactItem,
+.topBar,
+.topBarLink {
+  color: #e5e7eb;
+}
+
+.logo,
+.nav a:hover,
+.navActive,
+.navActive:hover,
+.mobileNavActive,
+.mobileNav a:hover,
+.aboutLink,
+.highlight,
+.diffEyebrow,
+.valuesEyebrow,
+.contactDetailIcon,
+.faqChevron,
+.footerLinkIcon,
+.footerContactIcon {
+  color: #a78bfa;
+}
+
+.heroEyebrow,
+.heroCardIcon,
+.storyEyebrow,
+.diffIcon,
+.valueIcon,
+.whyCheck {
+  color: #a78bfa;
+}
+
+.heroEyebrow::before,
+.diffEyebrow::before,
+.diffEyebrow::after,
+.diffTitle::after,
+.valuesEyebrow::after,
+.footerHeading::after {
+  background: #7c3aed;
+}
+
+.title,
+.sectionTitle,
+.cardTitle,
+.diffHeading,
+.diffTitle,
+.valuesHeading,
+.valueTitle,
+.whyHeading,
+.fitHeading,
+.stepTitle,
+.faqQuestion,
+.footerHeading,
+.contactValue,
+.heroCardTitle {
+  color: #ffffff;
+}
+
+.subtitle,
+.sectionText,
+.cardText,
+.diffText,
+.valuesIntro,
+.valueText,
+.whyText,
+.fitText,
+.stepText,
+.leadAnswer,
+.footerBlurb,
+.footerCopyright,
+.footerCredit,
+.contactDetail,
+.contactDetailLabel,
+.faqAnswer,
+.brand,
+.heroCardText {
+  color: #d1d5db;
+}
+
+.card,
+.heroCardLight,
+.brand,
+.step,
+.faqItem,
+.form,
+.mobileNav,
+.contactCard {
+  background: #08080b;
+  border-color: rgba(124, 58, 237, 0.28);
+  box-shadow: none;
+}
+
+.heroCardDark,
+.story {
+  background: #08080b;
+  border: 1px solid rgba(124, 58, 237, 0.28);
+  box-shadow: none;
+}
+
+.mobileMenuButton,
+.buttonSecondary,
+.formInput,
+.formSelect,
+.formTextarea {
+  background: #0f0f13;
+  border-color: rgba(124, 58, 237, 0.45);
+  color: #ffffff;
+}
+
+.formLabel,
+.formLegend,
+.formChoice {
+  color: #ffffff;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #9ca3af;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.28);
+}
+
+.formChoice input {
+  accent-color: #7c3aed;
+}
+
+.buttonPrimary,
+.heroDarkButton,
+.formButton,
+.stepNumber,
+.topBarSocialLink {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.buttonPrimary:hover,
+.heroDarkButton:hover,
+.formButton:hover,
+.topBarSocialLink:hover {
+  background: #8b5cf6;
+}
+
+.buttonSecondary {
+  color: #ffffff;
+}
+
+.leadAnswer {
+  background: rgba(124, 58, 237, 0.12);
+  border-left-color: #7c3aed;
+}
+
+.diffIconWrap {
+  background: rgba(124, 58, 237, 0.16);
+}
+
+.footerDivider,
+.footer {
+  border-color: rgba(124, 58, 237, 0.28);
+}
+
+.ctaBand {
+  background: #000000;
+  border-top: 1px solid rgba(124, 58, 237, 0.35);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+.ctaButtonPhone {
+  background: #7c3aed;
+}
+
+.ctaButtonPhone:hover {
+  background: #8b5cf6;
+}
+
+.ctaButtonEmail {
+  border-color: rgba(167, 139, 250, 0.72);
+}
+
+.ctaButtonEmail:hover {
+  border-color: #a78bfa;
+  background: rgba(124, 58, 237, 0.16);
+}
