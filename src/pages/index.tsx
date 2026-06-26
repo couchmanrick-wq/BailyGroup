@@ -140,6 +140,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.section}>
+        <div className={styles.fitGrid}>
+          <div className={styles.fitMedia}>
+            <img
+              src="/images/hero-car.jpg"
+              alt="A premium vehicle on the open road"
+              className={styles.fitImage}
+              loading="lazy"
+            />
+            <p className={styles.fitCaption}>The vehicle-buying experience you deserve</p>
+          </div>
+          <div>
+            <h2 className={styles.fitHeading}>Is a vehicle concierge right for you?</h2>
+            <p className={styles.fitText}>
+              The Baily Group is a personal vehicle concierge for people across Kitchener, Waterloo, Cambridge, and Guelph who would rather not lose a weekend to dealerships. If any of these sound like you, it is probably a great fit:
+            </p>
+            <ul className={styles.whyList}>
+              {[
+                'You would rather skip the dealership back-and-forth',
+                'You run a business or have a packed schedule',
+                'You value your time and straight answers',
+                'You are buying your first car — or your next upgrade',
+                'You want one trusted person to handle the legwork',
+              ].map((item) => (
+                <li key={item} className={styles.whyItem}>
+                  <svg className={styles.whyCheck} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m8 12 2.5 2.5L16 9" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <a href="/services" className={`${styles.heroDarkButton} ${styles.fitButton}`}>
+              Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className={styles.section}>
         <h2 className={styles.sectionTitle}>About The Baily Group</h2>
         <p className={styles.sectionText}>
