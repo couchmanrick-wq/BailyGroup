@@ -113,6 +113,13 @@
   padding-bottom: 3rem;
   align-content: start;
 }
+.heroCardIcon,
+.storyEyebrow,
+.diffIcon,
+.valueIcon,
+.whyCheck {
+  color: #254b73;
+}
 
 .heroEyebrow {
   display: inline-flex;
@@ -122,7 +129,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #002b52;
+  color: #ffffff;
 }
 
 .heroEyebrow::before {
@@ -130,7 +137,7 @@
   width: 2.25rem;
   height: 3px;
   border-radius: 2px;
-  background: #002b52;
+  background: #ffffff;
 }
 
 .heroDarkTitle {
@@ -1589,7 +1596,6 @@ a.footerContactItem:hover {
   color: #254b73;
 }
 
-.heroEyebrow::before,
 .diffEyebrow::before,
 .diffEyebrow::after,
 .diffTitle::after,
