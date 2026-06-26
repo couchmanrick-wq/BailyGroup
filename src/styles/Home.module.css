@@ -1839,3 +1839,61 @@ a.footerContactItem:hover {
   background: rgba(124, 58, 237, 0.1);
   border-color: #7c3aed;
 }
+
+/* Restore white main content sections */
+.page,
+.headerBar,
+.section,
+.ctaBand {
+  background: #ffffff;
+  color: #111827;
+}
+
+.headerBar {
+  border-bottom-color: rgba(148, 163, 184, 0.18);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.title,
+.sectionTitle,
+.diffHeading,
+.diffTitle,
+.valuesHeading,
+.valueTitle,
+.whyHeading,
+.fitHeading,
+.contactValue {
+  color: #111827;
+}
+
+.subtitle,
+.sectionText,
+.diffText,
+.valuesIntro,
+.valueText,
+.whyText,
+.fitText,
+.whyItem,
+.footer,
+.contactLabel {
+  color: #475569;
+}
+
+.nav {
+  color: #475569;
+}
+
+.logo,
+.nav a:hover,
+.navActive,
+.navActive:hover,
+.highlight,
+.diffEyebrow,
+.valuesEyebrow {
+  color: #7c3aed;
+}
+
+.heroDark,
+.siteFooter {
+  background: #000000;
+}

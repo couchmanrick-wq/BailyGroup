@@ -2,8 +2,8 @@
 :root {
   color-scheme: light;
   font-family: 'Bodoni 72', 'Bodoni 72 Smallcaps', 'Bodoni MT', 'Bodoni Moda', Didot, 'Times New Roman', serif;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #111827;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 body {
-  background: #000000;
+  background: #ffffff;
 }
 
 img,
