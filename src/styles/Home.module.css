@@ -366,10 +366,14 @@
 
 .navActive {
   color: #002b52;
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 2px;
 }
 
 .navActive:hover {
   color: #002b52;
+  text-decoration: underline;
 }
 
 .mobileMenu {
