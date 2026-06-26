@@ -463,6 +463,102 @@
   color: #2f3c86;
 }
 
+/* "What makes us different" centered feature grid */
+.diffEyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #c2aa66;
+}
+
+.diffEyebrow::before,
+.diffEyebrow::after {
+  content: '';
+  width: 3rem;
+  height: 1px;
+  background: #c2aa66;
+}
+
+.diffHeading {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #111827;
+}
+
+.diffGrid {
+  display: grid;
+  gap: 2.75rem;
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 700px) {
+  .diffGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .diffGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.diffItem {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.diffIconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background: rgba(194, 170, 102, 0.12);
+}
+
+.diffIcon {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #c2aa66;
+}
+
+.diffTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #111827;
+}
+
+.diffTitle::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
+  background: #c2aa66;
+}
+
+.diffText {
+  margin: 0.25rem 0 0;
+  max-width: 22rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
 /* "What we stand for" values section */
 .valuesHead {
   display: grid;

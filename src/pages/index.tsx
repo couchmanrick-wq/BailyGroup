@@ -104,6 +104,97 @@ export default function Home() {
       </section>
 
       <section className={styles.section}>
+        <span className={styles.diffEyebrow}>We don&apos;t just sell vehicles — we deliver an experience.</span>
+        <h2 className={styles.diffHeading}>What makes us different</h2>
+        <div className={styles.diffGrid}>
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2" />
+                <circle cx="6.5" cy="16.5" r="2.5" />
+                <circle cx="16.5" cy="16.5" r="2.5" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>Personal concierge</h3>
+            <p className={styles.diffText}>
+              Your own vehicle expert who handles it all — sourcing, negotiating, and scheduling. One point of contact, zero dealership hassle, from the first call to keys in hand.
+            </p>
+          </article>
+
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="7.5" cy="15.5" r="5.5" />
+                <path d="m21 2-9.6 9.6" />
+                <path d="m15.5 7.5 3 3L22 7l-3-3" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>Private test drives</h3>
+            <p className={styles.diffText}>
+              Skip the showroom. We bring the vehicle to you anywhere in Guelph, Kitchener, Waterloo, or Cambridge for a relaxed, no-pressure test drive on your schedule.
+            </p>
+          </article>
+
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>Business fleet programs</h3>
+            <p className={styles.diffText}>
+              Custom-built solutions for entrepreneurs, realtors, and business owners who need more than one vehicle — and a partner who understands how their company actually runs.
+            </p>
+          </article>
+
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                <path d="M15 18H9" />
+                <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                <circle cx="17" cy="18" r="2" />
+                <circle cx="7" cy="18" r="2" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>White-glove delivery</h3>
+            <p className={styles.diffText}>
+              We deliver your vehicle straight to your door across southwestern Ontario — cleaned, detailed, and ready to drive — because your time and convenience matter.
+            </p>
+          </article>
+
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+                <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>Transparent financing guidance</h3>
+            <p className={styles.diffText}>
+              No fine print and no fast talk. We break down your financing and lease options in plain language, so the numbers genuinely make sense for your situation.
+            </p>
+          </article>
+
+          <article className={styles.diffItem}>
+            <span className={styles.diffIconWrap}>
+              <svg className={styles.diffIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m17 2 4 4-4 4" />
+                <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
+                <path d="m7 22-4-4 4-4" />
+                <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+              </svg>
+            </span>
+            <h3 className={styles.diffTitle}>Sell or trade seamlessly</h3>
+            <p className={styles.diffText}>
+              Selling or trading in your current vehicle should be simple. We make it fast, fair, and pressure-free — with no obligation to buy.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className={styles.section}>
         <div className={styles.whyGrid}>
           <div>
             <h2 className={styles.whyHeading}>Why busy people hand us the keys</h2>
