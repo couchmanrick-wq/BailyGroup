@@ -181,9 +181,9 @@ export default function Home() {
       </section>
 
       <section id="about" className={styles.section}>
-        <h2 className={styles.sectionTitle}>About The Baily Group</h2>
+        <h2 className={styles.sectionTitle}>Meet Lawrence Baily</h2>
         <p className={styles.sectionText}>
-          Led by Lawrence Baily, The Baily Group helps individuals and businesses across Southwestern Ontario buy and lease vehicles. We bring straightforward advice and real market knowledge to every deal, so you get the right vehicle at the right price.
+          The Baily Group is a personal vehicle concierge — not a dealership. Lawrence does the searching, negotiating, and paperwork for individuals and businesses across Kitchener, Waterloo, Cambridge, and Guelph, then delivers the right vehicle to your door.
         </p>
         <div className={styles.aboutGrid}>
           <img
@@ -195,41 +195,14 @@ export default function Home() {
             loading="lazy"
           />
           <div className={styles.card}>
-            <h3 className={styles.cardTitle}>Who I work with</h3>
+            <h3 className={styles.cardTitle}>A better way to buy a vehicle</h3>
             <p className={styles.cardText}>
-              I work with people who are tired of dealerships, who don&apos;t have the time, or who have been burned in the past. I also work with local businesses to structure leases for their commercial operations — so the trucks and vans you rely on are working as hard for your company as you do.
+              No showroom pressure and no wasted weekends — just honest, market-based advice and one trusted point of contact from the first call to delivery.
             </p>
+            <a href="/about" className={styles.aboutLink}>More about The Baily Group →</a>
           </div>
         </div>
       </section>
-
-      <section className={styles.section}>
-        <div className={styles.story}>
-          <span className={styles.storyEyebrow}>A recent win</span>
-          <p className={styles.storyQuote}>
-            &ldquo;A client&apos;s vehicle was stolen and they suddenly needed a family hauler. We lowered the anxiety, honed in on the right vehicle, set up the test drive, and walked them all the way to the finish line.&rdquo;
-          </p>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Fleet relationships</h2>
-        <p className={styles.sectionText}>
-          We hold fleet relationships with every domestic manufacturer — GM gives our clients the most competitive advantages — backed by a network of premium dealers we work with directly. If you run one or more trucks or vans and want to bring your vehicles in-house as you grow, let&apos;s talk.
-        </p>
-        <ul className={styles.brandList}>
-          <li className={styles.brand}>GM</li>
-          <li className={styles.brand}>BMW</li>
-          <li className={styles.brand}>Porsche</li>
-          <li className={styles.brand}>Land Rover</li>
-          <li className={styles.brand}>Jaguar</li>
-          <li className={styles.brand}>Volvo</li>
-          <li className={styles.brand}>Acura</li>
-          <li className={styles.brand}>Lexus</li>
-        </ul>
-      </section>
-
-
     </Layout>
   )
 }

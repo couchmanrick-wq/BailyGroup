@@ -440,6 +440,17 @@
   line-height: 1.75;
 }
 
+.aboutLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #c2aa66;
+  font-weight: 600;
+}
+
+.aboutLink:hover {
+  text-decoration: underline;
+}
+
 .highlight {
   color: #2f3c86;
   font-weight: 700;

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: 'Who do you work with?',
-    answer: 'People who are tired of dealerships, who don’t have the time, or who have been burned in the past — plus local businesses looking to structure leases for their commercial operations.',
+    answer: 'Busy professionals, growing families, and first-time buyers who would rather skip the dealership grind — plus local businesses that need commercial leases structured around how they operate.',
   },
   {
     question: 'Do you handle commercial and fleet vehicles?',
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: 'What area do you serve?',
-    answer: 'Lawrence Baily is based in Guelph, Ontario, and serves individuals and businesses across much of southwestern Ontario — including Kitchener, Waterloo, Cambridge, and Guelph.',
+    answer: 'We cover Guelph, Kitchener, Waterloo, Cambridge, and the surrounding southwestern Ontario communities. With Lawrence based in Guelph, local market knowledge is built in.',
   },
   {
     question: 'How do I get started?',
