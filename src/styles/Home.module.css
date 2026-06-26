@@ -1840,6 +1840,20 @@ a.footerContactItem:hover {
   border-color: #7c3aed;
 }
 
+.services .card {
+  background: #000000;
+  border-color: rgba(124, 58, 237, 0.42);
+  color: #ffffff;
+}
+
+.services .cardTitle {
+  color: #ffffff;
+}
+
+.services .cardText {
+  color: #e5e7eb;
+}
+
 /* Restore white main content sections */
 .page,
 .headerBar,
