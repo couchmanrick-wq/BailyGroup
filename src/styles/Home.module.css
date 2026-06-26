@@ -1744,3 +1744,98 @@ a.footerContactItem:hover {
   border-color: #a78bfa;
   background: rgba(124, 58, 237, 0.16);
 }
+
+/* White content containers on black page background */
+.card,
+.heroCard,
+.heroCardLight,
+.heroCardDark,
+.brand,
+.step,
+.faqItem,
+.form,
+.mobileNav,
+.contactCard,
+.story,
+.leadAnswer {
+  background: #ffffff;
+  border-color: rgba(124, 58, 237, 0.24);
+  color: #111827;
+  box-shadow: none;
+}
+
+.ctaBand {
+  background: #ffffff;
+  color: #111827;
+  border-top: 1px solid rgba(124, 58, 237, 0.28);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.28);
+}
+
+.ctaBandTitle,
+.cardTitle,
+.heroCardTitle,
+.stepTitle,
+.faqQuestion,
+.formLabel,
+.formLegend,
+.formChoice,
+.contactValue,
+.storyQuote {
+  color: #111827;
+}
+
+.cardText,
+.heroCardText,
+.stepText,
+.faqAnswer,
+.leadAnswer,
+.brand,
+.contactDetail,
+.contactDetailLabel,
+.story,
+.ctaBandText {
+  color: #4b5563;
+}
+
+.formInput,
+.formSelect,
+.formTextarea,
+.mobileMenuButton {
+  background: #ffffff;
+  border-color: rgba(124, 58, 237, 0.42);
+  color: #111827;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #8b95a1;
+}
+
+.mobileNav {
+  color: #374151;
+}
+
+.mobileNavActive,
+.mobileNav a:hover,
+.aboutLink,
+.storyEyebrow {
+  color: #7c3aed;
+}
+
+.mobileNavActive,
+.mobileNav a:hover {
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.buttonSecondary,
+.ctaButtonEmail {
+  background: #ffffff;
+  color: #7c3aed;
+  border: 1px solid rgba(124, 58, 237, 0.42);
+}
+
+.buttonSecondary:hover,
+.ctaButtonEmail:hover {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: #7c3aed;
+}
