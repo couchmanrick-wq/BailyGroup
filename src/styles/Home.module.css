@@ -186,6 +186,27 @@
   background: #254b73;
 }
 
+.heroCalendlyLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 0.95rem 1.4rem;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #002b52;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.heroCalendlyLink:hover {
+  transform: translateY(-1px);
+  background: #e2e8f0;
+}
+
 .heroDarkMedia {
   position: relative;
   align-self: end;

@@ -52,6 +52,14 @@ export default function Home() {
             </a>
           </div>
           <div className={styles.heroDarkMedia}>
+            <a
+              href="https://calendly.com/lawrence-bailygrp/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.heroCalendlyLink}
+            >
+              Schedule a 30-minute consult
+            </a>
             <img
               src="/images/lawrence-baily2.webp"
               alt="Lawrence Baily of The Baily Group"
