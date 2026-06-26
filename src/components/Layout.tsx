@@ -138,6 +138,22 @@ export default function Layout({
           </div>
           <div className={styles.topBarSocial}>
             <a
+              href="https://www.facebook.com/p/The-Baily-Group-61585101267711/"
+              className={styles.topBarSocialLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="The Baily Group on Facebook"
+            >
+              <svg
+                className={styles.topBarSocialIcon}
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.925-1.954 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
+              </svg>
+            </a>
+            <a
               href="https://www.linkedin.com/in/lawrencebaily/"
               className={styles.topBarSocialLink}
               target="_blank"
@@ -303,6 +319,19 @@ export default function Layout({
                       <circle cx="12" cy="10" r="3" />
                     </svg>
                     Kitchener, Waterloo, Cambridge, Guelph & Southwestern Ontario
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/p/The-Baily-Group-61585101267711/"
+                      className={styles.footerContactItem}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.925-1.954 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
+                      </svg>
+                      Connect on Facebook
+                    </a>
                   </li>
                   <li>
                     <a
