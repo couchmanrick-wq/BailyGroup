@@ -1,7 +1,7 @@
 /* Global style reset and brand colors for The Baily Group */
 :root {
   color-scheme: light;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Bodoni 72', 'Bodoni 72 Smallcaps', 'Bodoni MT', 'Bodoni Moda', Didot, 'Times New Roman', serif;
   background-color: #f7f8fb;
   color: #111827;
   font-size: 16px;
