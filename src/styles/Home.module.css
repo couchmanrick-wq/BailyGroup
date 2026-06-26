@@ -74,6 +74,173 @@
   padding: 5rem 0 3rem;
 }
 
+/* Dark feature hero (loosely based on the webinar reference layout) */
+.heroDark {
+  position: relative;
+  margin: 1.5rem 0 0;
+  border-radius: 1.75rem;
+  background: radial-gradient(circle at 78% 18%, rgba(245, 166, 35, 0.16), transparent 42%),
+    #14161b;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.heroDarkGrid {
+  display: grid;
+  gap: 2rem;
+  align-items: end;
+  padding: 3rem 2rem 0;
+}
+
+.heroDarkContent {
+  display: grid;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+  align-content: start;
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f5a623;
+}
+
+.heroEyebrow::before {
+  content: '';
+  width: 2.25rem;
+  height: 3px;
+  border-radius: 2px;
+  background: #f5a623;
+}
+
+.heroDarkTitle {
+  margin: 0;
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.heroDarkSubtitle {
+  margin: 0;
+  max-width: 34rem;
+  color: rgba(226, 232, 240, 0.82);
+  font-size: 1.05rem;
+}
+
+.heroDarkButton {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.95rem 1.75rem;
+  border-radius: 0.6rem;
+  background: #f5a623;
+  color: #14161b;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.heroDarkButton:hover {
+  transform: translateY(-1px);
+  background: #ffb845;
+}
+
+.heroDarkMedia {
+  position: relative;
+  align-self: end;
+  justify-self: center;
+}
+
+.heroDarkMedia img {
+  width: 100%;
+  max-width: 24rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+.heroCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  width: min(640px, calc(100% - 2rem));
+  margin: -3.5rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.heroCard {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+}
+
+.heroCardDark {
+  background: #2d3748;
+  color: #ffffff;
+}
+
+.heroCardLight {
+  background: #e2e8f0;
+  color: #1f2937;
+}
+
+.heroCardHead {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.heroCardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.heroCardIcon {
+  width: 1.9rem;
+  height: 1.9rem;
+  color: #f5a623;
+  flex-shrink: 0;
+}
+
+.heroCardText {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+.heroCardLight .heroCardText {
+  color: #475569;
+}
+
+@media (min-width: 860px) {
+  .heroDarkGrid {
+    grid-template-columns: 1.1fr 0.9fr;
+    padding: 3.5rem 3rem 0 3rem;
+  }
+
+  .heroDarkContent {
+    padding-bottom: 4.5rem;
+  }
+
+  .heroDarkMedia img {
+    max-width: 26rem;
+  }
+}
+
 .heroInner {
   display: grid;
   gap: 2.5rem;

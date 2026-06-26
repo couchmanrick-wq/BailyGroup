@@ -26,31 +26,63 @@ export default function Home() {
       title="The Baily Group — Vehicle Buying & Leasing in Southwestern Ontario"
       description="Lawrence Baily and The Baily Group help individuals and businesses buy and lease vehicles across Southwestern Ontario."
     >
-      <section className={styles.hero}>
-        <div className={styles.heroInner}>
-          <div className={styles.heroContent}>
-            <h1 className={styles.title}>If it has four wheels and a license plate, I can help.</h1>
-            <p className={styles.subtitle}>
-              Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group help individuals and businesses across Southwestern Ontario get the right personal or commercial vehicle — without spending their weekends at dealerships.
+      <section className={styles.heroDark}>
+        <div className={styles.heroDarkGrid}>
+          <div className={styles.heroDarkContent}>
+            <span className={styles.heroEyebrow}>Expert. Reliable. On your side.</span>
+            <h1 className={styles.heroDarkTitle}>If it has four wheels and a license plate, I can help.</h1>
+            <p className={styles.heroDarkSubtitle}>
+              Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group get you the right personal or commercial vehicle — without spending your weekends at dealerships.
             </p>
-            <div className={styles.ctaGroup}>
-              <a href="#contact" className={styles.buttonPrimary}>
-                Get started
-              </a>
-              <a href="/services" className={styles.buttonSecondary}>
-                Explore our services
-              </a>
-            </div>
+            <a href="#contact" className={styles.heroDarkButton}>
+              Get started
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
           </div>
-          <div className={styles.heroMedia}>
+          <div className={styles.heroDarkMedia}>
             <img
-              src="/images/hero-car.jpg"
-              alt="A vehicle on the open road"
+              src="/images/lawrence-baily2.webp"
+              alt="Lawrence Baily of The Baily Group"
+              width={600}
+              height={600}
               loading="eager"
             />
           </div>
         </div>
       </section>
+
+      <div className={styles.heroCards}>
+        <div className={`${styles.heroCard} ${styles.heroCardDark}`}>
+          <div className={styles.heroCardHead}>
+            <svg className={styles.heroCardIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <path d="M14 2v6h6" />
+              <path d="M8 13h8" />
+              <path d="M8 17h8" />
+              <path d="M8 9h2" />
+            </svg>
+            <h2 className={styles.heroCardTitle}>Expert Guidance</h2>
+          </div>
+          <p className={styles.heroCardText}>
+            Real market knowledge on every deal, so you find the right vehicle at the right price with ease.
+          </p>
+        </div>
+        <div className={`${styles.heroCard} ${styles.heroCardLight}`}>
+          <div className={styles.heroCardHead}>
+            <svg className={styles.heroCardIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M7 10v12" />
+              <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88z" />
+            </svg>
+            <h2 className={styles.heroCardTitle}>Premium Service</h2>
+          </div>
+          <p className={styles.heroCardText}>
+            Personalized, end-to-end handling of the search, negotiation, and paperwork for a seamless experience.
+          </p>
+        </div>
+      </div>
 
       <section id="services" className={styles.section}>
         <h2 className={styles.sectionTitle}>How we can help</h2>
