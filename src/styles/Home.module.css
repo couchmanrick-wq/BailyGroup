@@ -321,20 +321,15 @@
   gap: 2.5rem;
 }
 
-/* Full-width centered showcase image (sold-vehicle photo) */
+/* Showcase image (sold-vehicle photo) — fills the content section */
 .showcase {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 2.5rem 1rem 0;
+  padding: 2.5rem 0 0;
 }
 
 .showcaseImage {
   display: block;
   width: 100%;
-  max-width: 1448px;
   height: auto;
-  margin: 0 auto;
   border-radius: 1rem;
 }
 
