@@ -16,6 +16,13 @@ const navLinks = [
   { href: '/#contact', label: 'Contact' },
 ]
 
+const footerLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/faqs', label: 'FAQs' },
+]
+
 export default function Layout({ title, description, children }: LayoutProps) {
   return (
     <>
@@ -101,8 +108,89 @@ export default function Layout({ title, description, children }: LayoutProps) {
 
         {children}
 
-        <footer className={styles.footer}>
-          © {new Date().getFullYear()} The Baily Group. Vehicle buying &amp; leasing across Southwestern Ontario.
+        <footer className={styles.siteFooter}>
+          <div className={styles.siteFooterInner}>
+            <div className={styles.footerGrid}>
+              <div>
+                <img
+                  src="/images/baily-group-logo.webp"
+                  alt="The Baily Group"
+                  className={styles.footerBrandLogo}
+                  width={96}
+                  height={96}
+                />
+                <p className={styles.footerBlurb}>
+                  The Baily Group: expert guidance, personalized service, and a stress-free way to
+                  buy, lease, finance, and source vehicles across Southwestern Ontario.
+                </p>
+              </div>
+
+              <div>
+                <h2 className={styles.footerHeading}>Quick Links</h2>
+                <ul className={styles.footerLinks}>
+                  {footerLinks.map((link) => (
+                    <li key={link.href}>
+                      <Link href={link.href} className={styles.footerLink}>
+                        <svg className={styles.footerLinkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h2 className={styles.footerHeading}>Contact Info</h2>
+                <ul className={styles.footerContact}>
+                  <li>
+                    <a href="tel:+15198033330" className={styles.footerContactItem}>
+                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      519.803.3330
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:lawrence@bailygroup.com" className={styles.footerContactItem}>
+                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 6-10 7L2 6" />
+                      </svg>
+                      lawrence@bailygroup.com
+                    </a>
+                  </li>
+                  <li className={styles.footerContactItem}>
+                    <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Southwestern Ontario
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/lawrencebaily/"
+                      className={styles.footerContactItem}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z" />
+                      </svg>
+                      Connect on LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr className={styles.footerDivider} />
+            <p className={styles.footerCopyright}>
+              Copyright © {new Date().getFullYear()} The Baily Group. All rights reserved.
+            </p>
+          </div>
         </footer>
       </main>
     </>
