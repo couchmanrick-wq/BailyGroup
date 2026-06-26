@@ -51,7 +51,7 @@
 .topBarIcon {
   width: 1.05rem;
   height: 1.05rem;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .topBarSocial {
@@ -67,14 +67,14 @@
   width: 1.85rem;
   height: 1.85rem;
   border-radius: 50%;
-  background-color: #7c3aed;
+  background-color: #002b52;
   color: #ffffff;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .topBarSocialLink:hover {
   transform: translateY(-1px);
-  background-color: #8b5cf6;
+  background-color: #254b73;
 }
 
 .topBarSocialIcon {
@@ -122,7 +122,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .heroEyebrow::before {
@@ -130,7 +130,7 @@
   width: 2.25rem;
   height: 3px;
   border-radius: 2px;
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .heroDarkTitle {
@@ -165,7 +165,7 @@
   margin-top: 0.5rem;
   padding: 0.95rem 1.75rem;
   border-radius: 0.6rem;
-  background: #7c3aed;
+  background: #002b52;
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -176,7 +176,7 @@
 
 .heroDarkButton:hover {
   transform: translateY(-1px);
-  background: #8b5cf6;
+  background: #254b73;
 }
 
 .heroDarkMedia {
@@ -252,7 +252,7 @@
 .heroCardIcon {
   width: 1.9rem;
   height: 1.9rem;
-  color: #7c3aed;
+  color: #002b52;
   flex-shrink: 0;
 }
 
@@ -336,11 +336,11 @@
 }
 
 .navActive {
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .navActive:hover {
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .mobileMenu {
@@ -400,8 +400,8 @@
 }
 
 .mobileMenuToggle:checked + .mobileMenuButton {
-  border-color: rgba(124, 58, 237, 0.55);
-  color: #7c3aed;
+  border-color: rgba(0, 43, 82, 0.55);
+  color: #002b52;
 }
 
 .mobileNav a {
@@ -411,8 +411,8 @@
 
 .mobileNav a:hover,
 .mobileNavActive {
-  background: rgba(124, 58, 237, 0.12);
-  color: #7c3aed;
+  background: rgba(0, 43, 82, 0.12);
+  color: #002b52;
 }
 
 @media (min-width: 760px) {
@@ -539,7 +539,7 @@
 .aboutLink {
   display: inline-block;
   margin-top: 1rem;
-  color: #7c3aed;
+  color: #002b52;
   font-weight: 600;
 }
 
@@ -567,7 +567,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .storyQuote {
@@ -604,7 +604,7 @@
   gap: 1rem;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .diffEyebrow::before,
@@ -612,7 +612,7 @@
   content: '';
   width: 3rem;
   height: 1px;
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .diffHeading {
@@ -658,13 +658,13 @@
   height: 5rem;
   margin-bottom: 0.5rem;
   border-radius: 50%;
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(0, 43, 82, 0.12);
 }
 
 .diffIcon {
   width: 2.25rem;
   height: 2.25rem;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .diffTitle {
@@ -682,7 +682,7 @@
   height: 2px;
   margin: 0.6rem auto 0;
   border-radius: 2px;
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .diffText {
@@ -714,7 +714,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .valuesEyebrow::after {
@@ -722,7 +722,7 @@
   width: 2.5rem;
   height: 2px;
   border-radius: 2px;
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .valuesHeading {
@@ -776,7 +776,7 @@
 .valueIcon {
   width: 3rem;
   height: 3rem;
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .valueTitle {
@@ -848,7 +848,7 @@
 .whyCheck {
   width: 1.4rem;
   height: 1.4rem;
-  color: #7c3aed;
+  color: #002b52;
   flex-shrink: 0;
 }
 
@@ -880,7 +880,7 @@
   gap: 0.95rem;
   padding: clamp(1.35rem, 3vw, 2rem);
   background: #f5f3ff;
-  border: 1px solid rgba(124, 58, 237, 0.22);
+  border: 1px solid rgba(0, 43, 82, 0.22);
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
 }
 
@@ -1072,7 +1072,7 @@
 .contactDetailIcon {
   width: 1.3rem;
   height: 1.3rem;
-  color: #7c3aed;
+  color: #002b52;
   flex-shrink: 0;
   margin-top: 0.15rem;
 }
@@ -1117,7 +1117,7 @@
 
 .faqChevron {
   flex-shrink: 0;
-  color: #7c3aed;
+  color: #002b52;
   transition: transform 0.25s ease;
 }
 
@@ -1227,7 +1227,7 @@
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 50%;
-  background: #7c3aed;
+  background: #002b52;
   color: #ffffff;
   font-weight: 800;
   font-size: 1.15rem;
@@ -1248,9 +1248,9 @@
 .leadAnswer {
   margin: 1.25rem 0 2rem;
   padding: 1.5rem 1.75rem;
-  border-left: 4px solid #7c3aed;
+  border-left: 4px solid #002b52;
   border-radius: 0 1rem 1rem 0;
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(0, 43, 82, 0.08);
   color: #1f2937;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -1327,7 +1327,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-top: 4rem;
-  background: #7c3aed;
+  background: #002b52;
   color: #ffffff;
 }
 
@@ -1453,7 +1453,7 @@
   height: 3px;
   margin-top: 0.6rem;
   border-radius: 2px;
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .footerLinks {
@@ -1480,7 +1480,7 @@
 .footerContactIcon {
   width: 1rem;
   height: 1rem;
-  color: #7c3aed;
+  color: #002b52;
   flex-shrink: 0;
 }
 
@@ -1550,7 +1550,7 @@ a.footerContactItem:hover {
 }
 
 .headerBar {
-  border-bottom-color: rgba(124, 58, 237, 0.32);
+  border-bottom-color: rgba(0, 43, 82, 0.32);
   box-shadow: none;
 }
 
@@ -1577,7 +1577,7 @@ a.footerContactItem:hover {
 .faqChevron,
 .footerLinkIcon,
 .footerContactIcon {
-  color: #a78bfa;
+  color: #254b73;
 }
 
 .heroEyebrow,
@@ -1586,7 +1586,7 @@ a.footerContactItem:hover {
 .diffIcon,
 .valueIcon,
 .whyCheck {
-  color: #a78bfa;
+  color: #254b73;
 }
 
 .heroEyebrow::before,
@@ -1595,7 +1595,7 @@ a.footerContactItem:hover {
 .diffTitle::after,
 .valuesEyebrow::after,
 .footerHeading::after {
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .title,
@@ -1645,14 +1645,14 @@ a.footerContactItem:hover {
 .mobileNav,
 .contactCard {
   background: #08080b;
-  border-color: rgba(124, 58, 237, 0.28);
+  border-color: rgba(0, 43, 82, 0.28);
   box-shadow: none;
 }
 
 .heroCardDark,
 .story {
   background: #08080b;
-  border: 1px solid rgba(124, 58, 237, 0.28);
+  border: 1px solid rgba(0, 43, 82, 0.28);
   box-shadow: none;
 }
 
@@ -1662,7 +1662,7 @@ a.footerContactItem:hover {
 .formSelect,
 .formTextarea {
   background: #0f0f13;
-  border-color: rgba(124, 58, 237, 0.45);
+  border-color: rgba(0, 43, 82, 0.45);
   color: #ffffff;
 }
 
@@ -1680,12 +1680,12 @@ a.footerContactItem:hover {
 .formInput:focus,
 .formSelect:focus,
 .formTextarea:focus {
-  border-color: #a78bfa;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.28);
+  border-color: #254b73;
+  box-shadow: 0 0 0 3px rgba(0, 43, 82, 0.28);
 }
 
 .formChoice input {
-  accent-color: #7c3aed;
+  accent-color: #002b52;
 }
 
 .buttonPrimary,
@@ -1693,7 +1693,7 @@ a.footerContactItem:hover {
 .formButton,
 .stepNumber,
 .topBarSocialLink {
-  background: #7c3aed;
+  background: #002b52;
   color: #ffffff;
 }
 
@@ -1701,7 +1701,7 @@ a.footerContactItem:hover {
 .heroDarkButton:hover,
 .formButton:hover,
 .topBarSocialLink:hover {
-  background: #8b5cf6;
+  background: #254b73;
 }
 
 .buttonSecondary {
@@ -1709,40 +1709,40 @@ a.footerContactItem:hover {
 }
 
 .leadAnswer {
-  background: rgba(124, 58, 237, 0.12);
-  border-left-color: #7c3aed;
+  background: rgba(0, 43, 82, 0.12);
+  border-left-color: #002b52;
 }
 
 .diffIconWrap {
-  background: rgba(124, 58, 237, 0.16);
+  background: rgba(0, 43, 82, 0.16);
 }
 
 .footerDivider,
 .footer {
-  border-color: rgba(124, 58, 237, 0.28);
+  border-color: rgba(0, 43, 82, 0.28);
 }
 
 .ctaBand {
   background: #000000;
-  border-top: 1px solid rgba(124, 58, 237, 0.35);
-  border-bottom: 1px solid rgba(124, 58, 237, 0.35);
+  border-top: 1px solid rgba(0, 43, 82, 0.35);
+  border-bottom: 1px solid rgba(0, 43, 82, 0.35);
 }
 
 .ctaButtonPhone {
-  background: #7c3aed;
+  background: #002b52;
 }
 
 .ctaButtonPhone:hover {
-  background: #8b5cf6;
+  background: #254b73;
 }
 
 .ctaButtonEmail {
-  border-color: rgba(167, 139, 250, 0.72);
+  border-color: rgba(37, 75, 115, 0.72);
 }
 
 .ctaButtonEmail:hover {
-  border-color: #a78bfa;
-  background: rgba(124, 58, 237, 0.16);
+  border-color: #254b73;
+  background: rgba(0, 43, 82, 0.16);
 }
 
 /* White content containers on black page background */
@@ -1759,7 +1759,7 @@ a.footerContactItem:hover {
 .story,
 .leadAnswer {
   background: #ffffff;
-  border-color: rgba(124, 58, 237, 0.24);
+  border-color: rgba(0, 43, 82, 0.24);
   color: #111827;
   box-shadow: none;
 }
@@ -1767,8 +1767,8 @@ a.footerContactItem:hover {
 .ctaBand {
   background: #ffffff;
   color: #111827;
-  border-top: 1px solid rgba(124, 58, 237, 0.28);
-  border-bottom: 1px solid rgba(124, 58, 237, 0.28);
+  border-top: 1px solid rgba(0, 43, 82, 0.28);
+  border-bottom: 1px solid rgba(0, 43, 82, 0.28);
 }
 
 .ctaBandTitle,
@@ -1802,7 +1802,7 @@ a.footerContactItem:hover {
 .formTextarea,
 .mobileMenuButton {
   background: #ffffff;
-  border-color: rgba(124, 58, 237, 0.42);
+  border-color: rgba(0, 43, 82, 0.42);
   color: #111827;
 }
 
@@ -1819,30 +1819,30 @@ a.footerContactItem:hover {
 .mobileNav a:hover,
 .aboutLink,
 .storyEyebrow {
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .mobileNavActive,
 .mobileNav a:hover {
-  background: rgba(124, 58, 237, 0.1);
+  background: rgba(0, 43, 82, 0.1);
 }
 
 .buttonSecondary,
 .ctaButtonEmail {
   background: #ffffff;
-  color: #7c3aed;
-  border: 1px solid rgba(124, 58, 237, 0.42);
+  color: #002b52;
+  border: 1px solid rgba(0, 43, 82, 0.42);
 }
 
 .buttonSecondary:hover,
 .ctaButtonEmail:hover {
-  background: rgba(124, 58, 237, 0.1);
-  border-color: #7c3aed;
+  background: rgba(0, 43, 82, 0.1);
+  border-color: #002b52;
 }
 
 .services .card {
   background: #000000;
-  border-color: rgba(124, 58, 237, 0.42);
+  border-color: rgba(0, 43, 82, 0.42);
   color: #ffffff;
 }
 
@@ -1904,7 +1904,7 @@ a.footerContactItem:hover {
 .highlight,
 .diffEyebrow,
 .valuesEyebrow {
-  color: #7c3aed;
+  color: #002b52;
 }
 
 .heroDark,
