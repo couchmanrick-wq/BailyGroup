@@ -43,3 +43,6 @@ Thumbs.db
 # Wrangler
 .wrangler
 dist/
+
+# Claude Code local settings
+.claude/settings.local.json
