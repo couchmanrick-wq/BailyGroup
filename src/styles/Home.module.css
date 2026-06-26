@@ -2,6 +2,74 @@
   min-height: 100vh;
 }
 
+.topBar {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.topBarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.65rem 0;
+  flex-wrap: wrap;
+}
+
+.topBarContact {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.topBarLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  transition: color 0.2s ease;
+}
+
+.topBarLink:hover {
+  color: #ffffff;
+}
+
+.topBarIcon {
+  width: 1.05rem;
+  height: 1.05rem;
+  color: #f5a623;
+}
+
+.topBarSocial {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.topBarSocialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background-color: #f5a623;
+  color: #2d3748;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.topBarSocialLink:hover {
+  transform: translateY(-1px);
+  background-color: #ffb845;
+}
+
+.topBarSocialIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .hero {
   padding: 5rem 0 3rem;
 }
@@ -151,6 +219,50 @@
 .highlight {
   color: #2f3c86;
   font-weight: 700;
+}
+
+.story {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #2f3c86, #4338ca);
+  color: #ffffff;
+  box-shadow: 0 30px 60px rgba(47, 60, 134, 0.25);
+}
+
+.storyEyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #f5a623;
+}
+
+.storyQuote {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.brandList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand {
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  font-weight: 600;
+  color: #2f3c86;
 }
 
 .aboutGrid {
