@@ -20,20 +20,28 @@ function json(body: unknown, status: number): Response {
   })
 }
 
+function field(value: string | string[] | undefined): string {
+  return Array.isArray(value) ? value.join(', ').trim() : (value || '').trim()
+}
+
 export async function onRequestPost(context: ContactContext): Promise<Response> {
   const { request, env } = context
 
-  let data: Record<string, string>
+  let data: Record<string, string | string[]>
   try {
     data = (await request.json()) as Record<string, string>
   } catch {
     return json({ error: 'Invalid request.' }, 400)
   }
 
-  const name = (data.name || '').trim()
-  const email = (data.email || '').trim()
-  const phone = (data.phone || '').trim()
-  const message = (data.message || '').trim()
+  const name = field(data.name)
+  const email = field(data.email)
+  const phone = field(data.phone)
+  const budget = field(data.budget)
+  const vehicleDetails = field(data.vehicleDetails)
+  const vehicleUse = field(data.vehicleUse)
+  const timeline = field(data.timeline)
+  const message = field(data.message)
 
   if (!name || !email || !message) {
     return json({ error: 'Please fill in your name, email, and message.' }, 400)
@@ -55,13 +63,17 @@ export async function onRequestPost(context: ContactContext): Promise<Response> 
       from: 'The Baily Group Website <noreply@bailygroup.com>',
       to: ['lawrence@bailygroup.com'],
       reply_to: email,
-      subject: `New website enquiry from ${name}`,
+      subject: `New vehicle wishlist from ${name}`,
       text: [
         `Name:  ${name}`,
         `Email: ${email}`,
-        `Phone: ${phone || '—'}`,
+        `Phone: ${phone || '-'}`,
+        `Budget: ${budget || '-'}`,
+        `Vehicle details: ${vehicleDetails || '-'}`,
+        `Vehicle use: ${vehicleUse || '-'}`,
+        `Purchase timeline: ${timeline || '-'}`,
         '',
-        'Message:',
+        'Additional notes / must-have features:',
         message,
       ].join('\n'),
     }),

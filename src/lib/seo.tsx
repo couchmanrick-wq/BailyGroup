@@ -13,7 +13,7 @@ const areaServed = [
   { '@type': 'AdministrativeArea', name: 'Southwestern Ontario, Canada' },
 ]
 
-// Primary entity: a local auto dealer / concierge based in Guelph.
+// Primary entity: a local auto buying concierge based in Guelph.
 export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'AutoDealer',
@@ -23,7 +23,7 @@ export const organizationSchema = {
   logo: `${SITE_URL}/images/baily-group-logo.webp`,
   image: `${SITE_URL}/images/about-car.jpg`,
   description:
-    'The Baily Group, led by Lawrence Baily, helps individuals and businesses buy, lease, finance, and source vehicles — without the dealership hassle. Based in Guelph and serving Kitchener, Waterloo, Cambridge, and southwestern Ontario.',
+    'The Baily Group, led by Lawrence Baily, is a car buying concierge service and auto buying consultant helping individuals and businesses buy, lease, finance, and source vehicles without dealership hassle. Based in Guelph and serving Kitchener, Waterloo, Cambridge, and southwestern Ontario.',
   founder: {
     '@type': 'Person',
     name: 'Lawrence Baily',
@@ -49,8 +49,12 @@ export const organizationSchema = {
     availableLanguage: ['English'],
   },
   knowsAbout: [
-    'Vehicle buying',
-    'Vehicle leasing',
+    'Car buying concierge service',
+    'Car buying consultant',
+    'Auto buying service',
+    'Car dealership negotiation service',
+    'New and used car buying help',
+    'Car lease negotiation service',
     'Auto financing',
     'Vehicle sourcing',
     'Commercial fleet leasing',
@@ -65,7 +69,7 @@ export const websiteSchema = {
   url: SITE_URL,
   name: SITE_NAME,
   description:
-    'Vehicle buying, leasing, financing, and sourcing across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario.',
+    'Car buying concierge service, auto buying support, lease negotiation, financing, and vehicle sourcing across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario.',
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-CA',
 }

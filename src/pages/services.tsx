@@ -7,33 +7,33 @@ const services = [
     title: 'Buy',
     image: '/images/service-buy.webp',
     imageAlt: 'A luxury sedan',
-    description: 'From a daily commuter to a weekend dream car, we find the vehicle that fits, confirm it is priced fairly against the market, and manage every step through to the day you drive it home — no lots, no pressure, no wasted Saturdays.',
+    description: 'From a daily commuter to a weekend dream car, our car buying consultant service finds the right new or used vehicle, confirms fair market pricing, negotiates the deal, and manages every step through delivery.',
   },
   {
     title: 'Lease',
     image: '/images/service-lease.webp',
     imageAlt: 'A commercial cargo delivery van',
-    description: 'We compare lease programs across manufacturers to land terms that make sense for your kilometres, your timeline, and your cash flow, then explain the fine print in plain English before you ever sign.',
+    description: 'Our car lease negotiation service compares programs across manufacturers to land terms that make sense for your kilometres, timeline, and cash flow, then explains the fine print before you sign.',
   },
   {
     title: 'Finance',
     image: '/images/service-finance.webp',
     imageAlt: 'A luxury sports coupe',
-    description: 'Getting approved should not feel like a fight. We line up financing that fits your budget and credit, walk you through the real numbers, and make sure the monthly payment is one you are genuinely comfortable with.',
+    description: 'Getting approved should not feel like a fight. We line up auto financing that fits your budget and credit, walk you through the real numbers, and make sure the monthly payment is one you are genuinely comfortable with.',
   },
   {
     title: 'Source',
     image: '/images/service-source.webp',
     imageAlt: 'A heavy-duty pickup truck',
-    description: 'Have a specific build in mind? We use our dealer and manufacturer network to hunt down exact makes, models, trims, and colours — including allocation-only and hard-to-find vehicles — and bring them to you.',
+    description: 'Have a specific build in mind? Our auto buying service uses dealer and manufacturer relationships to hunt down exact makes, models, trims, and colours, including allocation-only and hard-to-find vehicles.',
   },
 ]
 
 export default function Services() {
   return (
     <Layout
-      title="Services — The Baily Group"
-      description="Buy, lease, finance, and source vehicles with The Baily Group. Personal and commercial vehicle services across Southwestern Ontario."
+      title="Car Buying Consultant & Auto Negotiation Service | The Baily Group"
+      description="Car buying consultant, auto buying service, dealer negotiation, lease negotiation, financing, and vehicle sourcing for Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario."
       path="/services"
       breadcrumbs={[
         { name: 'Home', href: '/' },
@@ -42,9 +42,9 @@ export default function Services() {
       schema={[offerCatalogSchema(services)]}
     >
       <section className={styles.section}>
-        <h1 className={styles.title}>Services</h1>
+        <h1 className={styles.title}>Car Buying, Leasing & Auto Negotiation Services</h1>
         <p className={styles.subtitle}>
-          Every Baily Group service runs on one idea: you tell us what you need, and we take care of the rest. Here is exactly how we help drivers and businesses across Kitchener, Waterloo, Cambridge, and Guelph get into the right vehicle.
+          Every Baily Group service runs on one idea: you tell us what you need, and we take care of the rest. Here is exactly how our car buying concierge, lease negotiation, financing, and vehicle sourcing services help drivers and businesses across Kitchener, Waterloo, Cambridge, and Guelph get into the right vehicle.
         </p>
       </section>
 
@@ -70,14 +70,14 @@ export default function Services() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>For local businesses</h2>
         <p className={styles.sectionText}>
-          Your vehicles need to pull their weight. We structure commercial leases and purchases around how your business actually operates — cash flow, real-world usage, and where you are headed next — whether that is a single work van or a growing fleet of trucks moving across southwestern Ontario.
+          Your vehicles need to pull their weight. We structure commercial leases and purchases around how your business actually operates: cash flow, real-world usage, and where you are headed next, whether that is a single work van or a growing fleet of trucks moving across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario.
         </p>
       </section>
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Fleet relationships</h2>
         <p className={styles.sectionText}>
-          Years of dealer and manufacturer relationships mean better access and better pricing — and that advantage gets passed straight to you. We work with every domestic manufacturer, where GM tends to deliver the strongest savings, alongside a roster of premium import dealers.
+          Years of dealer and manufacturer relationships mean better access, stronger auto negotiation, and better pricing - and that advantage gets passed straight to you. We work with every domestic manufacturer, where GM tends to deliver the strongest savings, alongside a roster of premium import dealers.
         </p>
         <ul className={styles.brandList}>
           <li className={styles.brand}>GM</li>

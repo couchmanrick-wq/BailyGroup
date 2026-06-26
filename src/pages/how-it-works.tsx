@@ -42,9 +42,9 @@ const reasons = [
 const howToJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'How The Baily Group helps you buy or lease a vehicle',
+  name: 'How The Baily Group car buying concierge service helps you buy or lease a vehicle',
   description:
-    'The step-by-step process The Baily Group uses to help individuals and businesses in Southwestern Ontario buy, lease, finance, and source vehicles.',
+    'The step-by-step process The Baily Group uses as a car buying concierge service to help individuals and businesses in Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario buy, lease, finance, and source vehicles.',
   totalTime: 'P7D',
   step: steps.map((step, index) => ({
     '@type': 'HowToStep',
@@ -57,8 +57,8 @@ const howToJsonLd = {
 export default function HowItWorks() {
   return (
     <Layout
-      title="How It Works — The Baily Group | Vehicle Buying & Leasing in Kitchener, Waterloo, Cambridge & Guelph"
-      description="How The Baily Group works: a simple 5-step process to buy, lease, finance, or source the right vehicle in Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario — no dealership hassle. Led by Lawrence Baily of Guelph."
+      title="How Our Car Buying Concierge Service Works | The Baily Group"
+      description="How The Baily Group car buying concierge service works: sourcing, dealer negotiation, lease or finance guidance, paperwork, and delivery in Kitchener, Waterloo, Cambridge, and Guelph."
       path="/how-it-works"
       breadcrumbs={[
         { name: 'Home', href: '/' },
@@ -67,12 +67,9 @@ export default function HowItWorks() {
       schema={[howToJsonLd]}
     >
       <section className={styles.section}>
-        <h1 className={styles.title}>How It Works</h1>
+        <h1 className={styles.title}>How Our Car Buying Concierge Service Works</h1>
         <p className={styles.leadAnswer}>
-          The Baily Group makes buying or leasing a vehicle simple: you tell Lawrence Baily what you
-          need, we source and negotiate the right vehicle through our dealer and manufacturer fleet
-          relationships, handle the financing and paperwork, and deliver it to you — all without the
-          dealership runaround. Based in Guelph, the service covers personal and commercial vehicles
+          The Baily Group makes buying or leasing a vehicle simple: you tell Lawrence Baily what you need, and our car buying concierge service sources the right vehicle, handles dealer negotiation through trusted manufacturer and dealer relationships, manages financing or lease paperwork, and delivers it to you without the dealership runaround. Based in Guelph, the service covers personal and commercial vehicles
           across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario.
         </p>
       </section>
@@ -120,7 +117,7 @@ export default function HowItWorks() {
             </span>
             <h3 className={styles.diffTitle}>Personal concierge</h3>
             <p className={styles.diffText}>
-              Your own vehicle expert who handles it all — sourcing, negotiating, and scheduling. One point of contact, zero dealership hassle, from the first call to keys in hand.
+              Your own car buying consultant who handles it all: sourcing, negotiating, and scheduling. One point of contact, zero dealership hassle, from the first call to keys in hand.
             </p>
           </article>
 
@@ -176,7 +173,7 @@ export default function HowItWorks() {
             </span>
             <h3 className={styles.diffTitle}>Transparent financing guidance</h3>
             <p className={styles.diffText}>
-              No fine print and no fast talk. We break down your financing and lease options in plain language, so the numbers genuinely make sense for your situation.
+              No fine print and no fast talk. We break down your financing and car lease negotiation options in plain language, so the numbers genuinely make sense for your situation.
             </p>
           </article>
 
@@ -201,8 +198,7 @@ export default function HowItWorks() {
         <h2 className={styles.sectionTitle}>Local expertise across Kitchener, Waterloo, Cambridge &amp; Guelph</h2>
         <p className={styles.sectionText}>
           Lawrence Baily is based in Guelph, Ontario, and serves individuals and businesses across
-          much of southwestern Ontario — including Kitchener, Waterloo, Cambridge, and Guelph. That
-          local market knowledge means better sourcing, sharper negotiation, and a vehicle that fits
+          much of southwestern Ontario — including Kitchener, Waterloo, Cambridge, and Guelph. That local market knowledge means better sourcing, sharper dealership negotiation, and a vehicle that fits
           both your life and the way people actually drive here.
         </p>
       </section>

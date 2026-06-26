@@ -4,12 +4,12 @@ import styles from '../styles/Home.module.css'
 
 const faqs = [
   {
-    question: 'What is a vehicle concierge, and what does The Baily Group do?',
-    answer: 'The Baily Group is a personal vehicle concierge led by Lawrence Baily. Instead of sending you to dealerships, we handle the whole process for you — searching, negotiating, financing, and paperwork — for personal and commercial vehicles across Guelph, Kitchener, Waterloo, and Cambridge.',
+    question: 'What is a car buying concierge service, and what does The Baily Group do?',
+    answer: 'The Baily Group is a personal car buying concierge service led by Lawrence Baily. Instead of sending you to dealerships, we handle the whole process for you: searching, dealership negotiation, financing, lease support, and paperwork for personal and commercial vehicles across Guelph, Kitchener, Waterloo, and Cambridge.',
   },
   {
-    question: 'Why use a vehicle concierge instead of going to a dealership myself?',
-    answer: 'You save time and skip the showroom pressure. We bring real market knowledge to every deal, negotiate on your behalf, and deliver the right vehicle to your door — so you avoid the lots, the back-and-forth, and the lost weekends.',
+    question: 'Why use a car buying consultant instead of going to a dealership myself?',
+    answer: 'You save time and skip the showroom pressure. Our auto buying service brings real market knowledge to every deal, negotiates on your behalf, and delivers the right vehicle to your door — so you avoid the lots, the back-and-forth, and the lost weekends.',
   },
   {
     question: 'Who does The Baily Group work with?',
@@ -20,8 +20,8 @@ const faqs = [
     answer: 'Yes. We structure commercial leases and purchases for trucks and vans, and we hold fleet relationships with every domestic manufacturer — where GM tends to offer our clients the strongest advantages.',
   },
   {
-    question: 'Do you help with both new and used vehicles?',
-    answer: 'Both. Whether you want a brand-new build or a quality used vehicle, The Baily Group sources it, confirms it is priced fairly against the market, and manages the deal from search to delivery.',
+    question: 'Do you offer new and used car buying help?',
+    answer: 'Yes. Whether you want a brand-new build or a quality used vehicle, The Baily Group sources it, confirms it is priced fairly against the market, negotiates with the dealer, and manages the deal from search to delivery.',
   },
   {
     question: 'Which vehicle brands can you get?',
@@ -48,8 +48,8 @@ const faqs = [
 export default function Faqs() {
   return (
     <Layout
-      title="FAQs — The Baily Group"
-      description="Answers to common questions about buying, leasing, financing, and sourcing vehicles with The Baily Group in Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario."
+      title="Car Buying Concierge FAQs | The Baily Group"
+      description="Answers to common questions about car buying concierge service, auto buying help, dealer negotiation, lease negotiation, financing, and vehicle sourcing in Kitchener, Waterloo, Cambridge, and Guelph."
       path="/faqs"
       breadcrumbs={[
         { name: 'Home', href: '/' },

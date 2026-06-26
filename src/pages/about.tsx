@@ -15,8 +15,8 @@ const aboutPageSchema = {
 export default function About() {
   return (
     <Layout
-      title="About — The Baily Group"
-      description="Meet Lawrence Baily and The Baily Group, helping individuals and businesses buy and lease vehicles across Southwestern Ontario."
+      title="About The Baily Group | Car Buying Consultant in Guelph"
+      description="Meet Lawrence Baily and The Baily Group, a Guelph-based car buying consultant and auto buying service for Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario."
       path="/about"
       breadcrumbs={[
         { name: 'Home', href: '/' },
@@ -27,7 +27,7 @@ export default function About() {
       <section className={styles.section}>
         <h1 className={styles.title}>About The Baily Group</h1>
         <p className={styles.subtitle}>
-          Led by Lawrence Baily, The Baily Group helps individuals and businesses across Southwestern Ontario buy and lease vehicles. We bring straightforward advice and real market knowledge to every deal, so you get the right vehicle at the right price.
+          Led by Lawrence Baily, The Baily Group is a Guelph-based car buying consultant helping individuals and businesses across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario buy, lease, finance, and source vehicles. We bring straightforward advice, dealer negotiation, and real market knowledge to every deal, so you get the right vehicle at the right price.
         </p>
       </section>
 
@@ -44,7 +44,7 @@ export default function About() {
           <div className={styles.card}>
             <h2 className={styles.cardTitle}>Who I work with</h2>
             <p className={styles.cardText}>
-              I work with people who are tired of dealerships, who don&apos;t have the time, or who have been burned in the past. I also work with local businesses to structure leases for their commercial operations — so the trucks and vans you rely on are working as hard for your company as you do.
+              I work with people who are tired of dealerships, who don&apos;t have the time, or who want a trusted auto buying service to handle the search and negotiation. I also work with local businesses to structure leases for their commercial operations — so the trucks and vans you rely on are working as hard for your company as you do.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function About() {
             <h2 className={styles.valuesHeading}>Driven by values, built on trust</h2>
           </div>
           <p className={styles.valuesIntro}>
-            At The Baily Group, our values shape every deal. We are not here to push cars — we are here to change how people across Guelph, Kitchener, Waterloo, and Cambridge buy, lease, and finance vehicles. From personal guidance to honest, transparent pricing, our work is rooted in trust, convenience, and doing right by every client.
+            At The Baily Group, our values shape every deal. We are not here to push cars - we are here to change how people across Guelph, Kitchener, Waterloo, and Cambridge use a car buying concierge service to buy, lease, finance, and source vehicles. From personal guidance to honest, transparent pricing, our work is rooted in trust, convenience, and doing right by every client.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export default function About() {
             </svg>
             <h3 className={styles.valueTitle}>Concierge care</h3>
             <p className={styles.valueText}>
-              Whether you are buying your first car or sourcing a hard-to-find build, you get personal attention, tailored recommendations, and support that goes the extra mile.
+              Whether you need new and used car buying help or support sourcing a hard-to-find build, you get personal attention, tailored recommendations, and support that goes the extra mile.
             </p>
           </article>
 
@@ -124,7 +124,7 @@ export default function About() {
             </svg>
             <h3 className={styles.valueTitle}>Efficiency</h3>
             <p className={styles.valueText}>
-              We streamline the entire buying, leasing, and financing process so you spend less time at dealerships and more time on the road. Fast replies, smooth deals, done right the first time.
+              We streamline the entire car buying, lease negotiation, and financing process so you spend less time at dealerships and more time on the road. Fast replies, smooth deals, done right the first time.
             </p>
           </article>
 

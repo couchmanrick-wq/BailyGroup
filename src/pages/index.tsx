@@ -5,11 +5,11 @@ import styles from '../styles/Home.module.css'
 const services = [
   {
     title: 'Buy',
-    description: 'We source and secure the right new or used vehicle, negotiate the price, and handle the details from search to delivery.',
+    description: 'New and used car buying help from search to delivery: we source the right vehicle, negotiate the price, and handle the details.',
   },
   {
     title: 'Lease',
-    description: 'Flexible lease options with competitive terms and clear paperwork — matched to your budget, whether for yourself or your business.',
+    description: 'Car lease negotiation service with competitive terms and clear paperwork, matched to your budget, kilometres, and business needs.',
   },
   {
     title: 'Finance',
@@ -17,15 +17,15 @@ const services = [
   },
   {
     title: 'Source',
-    description: 'Looking for something specific? We track down the right vehicle for you — including hard-to-find makes, models, and trims.',
+    description: 'Looking for something specific? Our auto buying service tracks down the right vehicle, including hard-to-find makes, models, and trims.',
   },
 ]
 
 export default function Home() {
   return (
     <Layout
-      title="The Baily Group — Vehicle Buying & Leasing in Southwestern Ontario"
-      description="Lawrence Baily and The Baily Group help individuals and businesses buy and lease vehicles across Southwestern Ontario."
+      title="Car Buying Concierge Service in Kitchener, Waterloo, Cambridge & Guelph | The Baily Group"
+      description="The Baily Group is a car buying concierge service and auto buying consultant helping drivers and businesses in Kitchener, Waterloo, Cambridge, and Guelph buy, lease, finance, and source vehicles."
       path="/"
       breadcrumbs={[{ name: 'Home', href: '/' }]}
       schema={[offerCatalogSchema(services)]}
@@ -34,9 +34,9 @@ export default function Home() {
         <div className={styles.heroDarkGrid}>
           <div className={styles.heroDarkContent}>
             <span className={styles.heroEyebrow}>Expert. Reliable. Concierge service.</span>
-            <h1 className={styles.heroDarkTitle}>If it has four wheels and a license plate, I can help.</h1>
+            <h1 className={styles.heroDarkTitle}>Car buying concierge service for Kitchener, Waterloo, Cambridge and Guelph.</h1>
             <p className={styles.heroDarkSubtitle}>
-              Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group get you the right personal or commercial vehicle — without spending your weekends at dealerships.
+              Buy. Lease. Finance. Source. Lawrence Baily and The Baily Group get you the right personal or commercial vehicle with expert car dealership negotiation and no wasted weekends.
             </p>
             <a href="#contact" className={styles.heroDarkButton}>
               Get started
@@ -91,7 +91,7 @@ export default function Home() {
       <section id="services" className={styles.section}>
         <h2 className={styles.sectionTitle}>How we can help</h2>
         <p className={styles.sectionText}>
-          Whether you are after a personal vehicle or outfitting your business, we handle the search, the negotiation, and the paperwork so you can drive away with confidence.
+          Whether you need a personal vehicle or a commercial fleet, our auto buying service handles the search, dealership negotiation, lease or finance details, and paperwork so you can drive away with confidence.
         </p>
         <div className={`${styles.grid} ${styles.services}`}>
           {services.map((service) => (
@@ -152,9 +152,9 @@ export default function Home() {
             <p className={styles.fitCaption}>The vehicle-buying experience you deserve</p>
           </div>
           <div>
-            <h2 className={styles.fitHeading}>Is a vehicle concierge right for you?</h2>
+            <h2 className={styles.fitHeading}>Is a car buying concierge right for you?</h2>
             <p className={styles.fitText}>
-              The Baily Group is a personal vehicle concierge for people across Kitchener, Waterloo, Cambridge, and Guelph who would rather not lose a weekend to dealerships. If any of these sound like you, it is probably a great fit:
+              The Baily Group is a personal car buying consultant for people across Kitchener, Waterloo, Cambridge, and Guelph who would rather not lose a weekend to dealerships. If any of these sound like you, it is probably a great fit:
             </p>
             <ul className={styles.whyList}>
               {[
@@ -183,7 +183,7 @@ export default function Home() {
       <section id="about" className={styles.section}>
         <h2 className={styles.sectionTitle}>Meet Lawrence Baily</h2>
         <p className={styles.sectionText}>
-          The Baily Group is a personal vehicle concierge — not a dealership. Lawrence does the searching, negotiating, and paperwork for individuals and businesses across Kitchener, Waterloo, Cambridge, and Guelph, then delivers the right vehicle to your door.
+          The Baily Group is a personal car buying concierge service - not a dealership. Lawrence does the searching, dealership negotiation, and paperwork for individuals and businesses across Kitchener, Waterloo, Cambridge, and Guelph, then delivers the right vehicle to your door.
         </p>
         <div className={styles.aboutGrid}>
           <img

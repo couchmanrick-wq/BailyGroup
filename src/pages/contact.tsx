@@ -14,6 +14,9 @@ const contactPageSchema = {
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
+const vehicleUses = ['Daily Driver', 'Weekend Cruiser', 'Show/Collector Car', 'Investment/Flip']
+const purchaseTimelines = ['Immediately', 'Within 1 month', 'Within 3 months', 'Just exploring options']
+
 export default function Contact() {
   const [status, setStatus] = useState<Status>('idle')
   const [error, setError] = useState('')
@@ -21,7 +24,17 @@ export default function Contact() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const form = event.currentTarget
-    const payload = Object.fromEntries(new FormData(form).entries())
+    const formData = new FormData(form)
+    const payload = {
+      name: String(formData.get('name') || ''),
+      phone: String(formData.get('phone') || ''),
+      email: String(formData.get('email') || ''),
+      budget: String(formData.get('budget') || ''),
+      vehicleDetails: String(formData.get('vehicleDetails') || ''),
+      vehicleUse: formData.getAll('vehicleUse').map(String),
+      timeline: formData.getAll('timeline').map(String),
+      message: String(formData.get('message') || ''),
+    }
 
     setStatus('sending')
     setError('')
@@ -45,8 +58,8 @@ export default function Contact() {
 
   return (
     <Layout
-      title="Contact — The Baily Group"
-      description="Get in touch with Lawrence Baily and The Baily Group for vehicle buying, leasing, financing, and sourcing across Kitchener, Waterloo, Cambridge, Guelph, and southwestern Ontario."
+      title="Contact The Baily Group | Car Buying Concierge Service"
+      description="Contact The Baily Group for car buying concierge service, auto buying help, dealer negotiation, lease negotiation, financing, and vehicle sourcing across Kitchener, Waterloo, Cambridge, and Guelph."
       path="/contact"
       breadcrumbs={[
         { name: 'Home', href: '/' },
@@ -57,7 +70,7 @@ export default function Contact() {
       <section className={styles.section}>
         <h1 className={styles.title}>Contact</h1>
         <p className={styles.subtitle}>
-          Tell us what you&apos;re looking for and we&apos;ll help you find it. Fill out the form below, or reach Lawrence directly by phone or email.
+          Tell us what you&apos;re looking for and our car buying concierge service will help you find it. Fill out the form below, or reach Lawrence directly by phone or email.
         </p>
       </section>
 
@@ -67,35 +80,88 @@ export default function Contact() {
             <div className={styles.formRow}>
               <div className={styles.formField}>
                 <label className={styles.formLabel} htmlFor="name">
-                  Name
+                  Full Name
                 </label>
-                <input className={styles.formInput} id="name" name="name" type="text" autoComplete="name" required />
+                <input className={styles.formInput} id="name" name="name" type="text" autoComplete="name" placeholder="John Doe" required />
               </div>
               <div className={styles.formField}>
                 <label className={styles.formLabel} htmlFor="phone">
-                  Phone (optional)
+                  Phone Number
                 </label>
-                <input className={styles.formInput} id="phone" name="phone" type="tel" autoComplete="tel" />
+                <input className={styles.formInput} id="phone" name="phone" type="tel" autoComplete="tel" placeholder="+1 234 5789" />
               </div>
             </div>
 
-            <div className={styles.formField}>
-              <label className={styles.formLabel} htmlFor="email">
-                Email
-              </label>
-              <input className={styles.formInput} id="email" name="email" type="email" autoComplete="email" required />
+            <div className={styles.formRow}>
+              <div className={styles.formField}>
+                <label className={styles.formLabel} htmlFor="email">
+                  Email Address
+                </label>
+                <input className={styles.formInput} id="email" name="email" type="email" autoComplete="email" placeholder="hello@gmail.com" required />
+              </div>
+              <div className={styles.formField}>
+                <label className={styles.formLabel} htmlFor="budget">
+                  Budget Range
+                </label>
+                <select className={styles.formSelect} id="budget" name="budget" defaultValue="$20,000-$40,000">
+                  <option value="Under $20,000">Under $20,000</option>
+                  <option value="$20,000-$40,000">$20,000-$40,000</option>
+                  <option value="$40,000-$60,000">$40,000-$60,000</option>
+                  <option value="$60,000-$90,000">$60,000-$90,000</option>
+                  <option value="$90,000+">$90,000+</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
             </div>
 
-            <div className={styles.formField}>
+            <div className={`${styles.formField} ${styles.formFull}`}>
+              <label className={styles.formLabel} htmlFor="vehicleDetails">
+                Preferred Vehicle Details
+              </label>
+              <textarea
+                className={`${styles.formTextarea} ${styles.formTextareaCompact}`}
+                id="vehicleDetails"
+                name="vehicleDetails"
+                placeholder="What make/model/year or style of car are you looking for?"
+              />
+            </div>
+
+            <div className={styles.formOptionsGrid}>
+              <fieldset className={styles.formFieldset}>
+                <legend className={styles.formLegend}>What will you use this vehicle for?</legend>
+                <div className={styles.formChoiceList}>
+                  {vehicleUses.map((use) => (
+                    <label className={styles.formChoice} key={use}>
+                      <input type="checkbox" name="vehicleUse" value={use} />
+                      <span>{use}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <fieldset className={styles.formFieldset}>
+                <legend className={styles.formLegend}>How soon are you looking to purchase?</legend>
+                <div className={styles.formChoiceList}>
+                  {purchaseTimelines.map((timeline) => (
+                    <label className={styles.formChoice} key={timeline}>
+                      <input type="checkbox" name="timeline" value={timeline} />
+                      <span>{timeline}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+
+            <div className={`${styles.formField} ${styles.formFull}`}>
               <label className={styles.formLabel} htmlFor="message">
-                How can we help?
+                Additional Notes / Must-Have Features
               </label>
               <textarea
                 className={styles.formTextarea}
                 id="message"
                 name="message"
                 required
-                placeholder="Tell us about the vehicle you're after, your timeline, and your budget."
+                placeholder="Anything else we should know? (Color, trim, mileage cap, etc.)"
               />
             </div>
 
@@ -111,7 +177,7 @@ export default function Contact() {
             )}
 
             <button className={styles.formButton} type="submit" disabled={status === 'sending'}>
-              {status === 'sending' ? 'Sending…' : 'Send message'}
+              {status === 'sending' ? 'Sending...' : 'Submit My Vehicle Wishlist'}
             </button>
           </form>
 
@@ -144,7 +210,7 @@ export default function Contact() {
               </svg>
               <div>
                 <span className={styles.contactDetailLabel}>Service area</span>
-                Guelph, Kitchener, Waterloo, Cambridge &amp; southwestern Ontario
+                Car buying concierge service across Guelph, Kitchener, Waterloo, Cambridge &amp; southwestern Ontario
               </div>
             </div>
           </div>
