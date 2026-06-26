@@ -2,13 +2,13 @@
   min-height: 100vh;
 }
 
-.siteHeader {
+/* Only the nav bar is sticky; the contact bar above it scrolls away
+   naturally. Keeping the contact bar in normal flow means the sticky
+   element's height never changes, so the header stays rock-steady. */
+.headerBar {
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.headerBar {
   background: rgba(247, 248, 251, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -20,24 +20,6 @@
   background-color: #2d3748;
   color: #e2e8f0;
   font-size: 0.9rem;
-  max-height: 5rem;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.25s ease;
-}
-
-/* Shrink-on-scroll: hide the contact bar and reduce the logo/padding */
-.siteHeaderScrolled .topBar {
-  max-height: 0;
-  opacity: 0;
-}
-
-.siteHeaderScrolled .header {
-  padding: 0.6rem 0;
-}
-
-.siteHeaderScrolled .logoMark {
-  width: 4rem;
-  height: 4rem;
 }
 
 .topBarInner {
@@ -287,7 +269,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 0;
-  transition: padding 0.3s ease;
 }
 
 .logo {
@@ -305,7 +286,6 @@
   height: 7rem;
   border-radius: 50%;
   object-fit: cover;
-  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .nav {

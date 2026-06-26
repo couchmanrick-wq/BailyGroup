@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useState, type ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import styles from '../styles/Home.module.css'
 import {
   DEFAULT_OG_IMAGE,
@@ -60,25 +60,6 @@ export default function Layout({
   children,
 }: LayoutProps) {
   const router = useRouter()
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    // Hysteresis: collapse past 90px, only re-expand below 10px. The dead
-    // zone is wider than the contact bar's height, so the layout shift from
-    // collapsing can't bounce the scroll position back across the threshold
-    // (which otherwise makes the header flip-flop / "shake").
-    const onScroll = () => {
-      const y = window.scrollY
-      setScrolled((prev) => {
-        if (!prev && y > 90) return true
-        if (prev && y < 10) return false
-        return prev
-      })
-    }
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
 
   const canonical = `${SITE_URL}${path}`
   const socialTitle = ogTitle ?? title
@@ -120,8 +101,7 @@ export default function Layout({
         <JsonLd key={index} data={item} />
       ))}
 
-      <div className={`${styles.siteHeader} ${scrolled ? styles.siteHeaderScrolled : ''}`}>
-        <div className={styles.topBar}>
+      <div className={styles.topBar}>
         <div className={`${styles.topBarInner} container`}>
           <div className={styles.topBarContact}>
             <a href="tel:+15198033330" className={styles.topBarLink}>
@@ -204,7 +184,6 @@ export default function Layout({
             </nav>
           </header>
         </div>
-      </div>
       <main className={`${styles.page} container`}>
         {children}
 
