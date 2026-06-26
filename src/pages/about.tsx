@@ -59,7 +59,7 @@ export default function About() {
           <img
             src="/images/lawrence-sold-vehicle-1.webp"
             alt="Recently sold vehicle handled by Lawrence Baily"
-            className={styles.aboutImage}
+            className={styles.aboutImageFull}
             width={1200}
             height={900}
             loading="lazy"
