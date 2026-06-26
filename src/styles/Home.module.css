@@ -321,6 +321,14 @@
   color: #2f3c86;
 }
 
+.navActive {
+  color: #f5a623;
+}
+
+.navActive:hover {
+  color: #f5a623;
+}
+
 .heroContent {
   display: grid;
   gap: 1.75rem;

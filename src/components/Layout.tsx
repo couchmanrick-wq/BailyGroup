@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useEffect, useState, type ReactNode } from 'react'
 import styles from '../styles/Home.module.css'
 import {
@@ -58,6 +59,7 @@ export default function Layout({
   ogImage = DEFAULT_OG_IMAGE,
   children,
 }: LayoutProps) {
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -175,11 +177,19 @@ export default function Layout({
               />
             </Link>
             <nav className={styles.nav} aria-label="Primary navigation">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = !link.href.includes('#') && router.pathname === link.href
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={isActive ? styles.navActive : undefined}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
             </nav>
           </header>
         </div>
