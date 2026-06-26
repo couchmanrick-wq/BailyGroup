@@ -148,6 +148,7 @@ export default function About() {
       </section>
 
       <section className={styles.soldVehicleSection}>
+        <h2 className={styles.sectionTitle}>Another happy customer!</h2>
         <img
           src="/images/lawrence-sold-vehicle-1.webp"
           alt="Recently sold vehicle handled by Lawrence Baily"
