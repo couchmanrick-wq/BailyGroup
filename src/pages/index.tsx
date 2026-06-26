@@ -229,14 +229,6 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className={styles.section}>
-        <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Referral partners welcome</h2>
-          <p className={styles.cardText}>
-            Much of our best work comes through trusted partners. If you&apos;re an insurer, realtor, or operations manager with clients who need a vehicle handled the right way, we&apos;d love to work together.
-          </p>
-        </div>
-      </section>
 
     </Layout>
   )

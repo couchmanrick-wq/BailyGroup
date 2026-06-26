@@ -84,11 +84,62 @@ export default function About() {
       </section>
 
       <section className={styles.section}>
-        <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Referral partners welcome</h2>
-          <p className={styles.cardText}>
-            Much of our best work comes through trusted partners. If you&apos;re an insurer, realtor, or operations manager with clients who need a vehicle handled the right way, we&apos;d love to work together.
+        <div className={styles.valuesHead}>
+          <div>
+            <span className={styles.valuesEyebrow}>What we stand for</span>
+            <h2 className={styles.valuesHeading}>Driven by values, built on trust</h2>
+          </div>
+          <p className={styles.valuesIntro}>
+            At The Baily Group, our values shape every deal. We are not here to push cars — we are here to change how people across Guelph, Kitchener, Waterloo, and Cambridge buy, lease, and finance vehicles. From personal guidance to honest, transparent pricing, our work is rooted in trust, convenience, and doing right by every client.
           </p>
+        </div>
+
+        <div className={styles.valuesGrid}>
+          <article className={styles.valueItem}>
+            <svg className={styles.valueIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+              <rect x="9" y="3" width="6" height="4" rx="1" />
+              <path d="m9 14 2 2 4-4" />
+            </svg>
+            <h3 className={styles.valueTitle}>Transparency</h3>
+            <p className={styles.valueText}>
+              Upfront, honest communication from the first conversation to the final signature. No hidden fees and no surprises — just clear answers at every step.
+            </p>
+          </article>
+
+          <article className={styles.valueItem}>
+            <svg className={styles.valueIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+            <h3 className={styles.valueTitle}>Concierge care</h3>
+            <p className={styles.valueText}>
+              Whether you are buying your first car or sourcing a hard-to-find build, you get personal attention, tailored recommendations, and support that goes the extra mile.
+            </p>
+          </article>
+
+          <article className={styles.valueItem}>
+            <svg className={styles.valueIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            <h3 className={styles.valueTitle}>Efficiency</h3>
+            <p className={styles.valueText}>
+              We streamline the entire buying, leasing, and financing process so you spend less time at dealerships and more time on the road. Fast replies, smooth deals, done right the first time.
+            </p>
+          </article>
+
+          <article className={styles.valueItem}>
+            <svg className={styles.valueIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <h3 className={styles.valueTitle}>Community first</h3>
+            <p className={styles.valueText}>
+              We are proud to serve southwestern Ontario. When you work with The Baily Group, you support a local Guelph business invested in its neighbours across Kitchener, Waterloo, and Cambridge.
+            </p>
+          </article>
         </div>
       </section>
     </Layout>
