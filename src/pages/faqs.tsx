@@ -4,32 +4,44 @@ import styles from '../styles/Home.module.css'
 
 const faqs = [
   {
-    question: 'What does The Baily Group actually do?',
-    answer: 'We help you buy, lease, finance, and source vehicles. We handle the search, the negotiation, and the paperwork so you get the right vehicle without spending your weekends at dealerships.',
+    question: 'What is a vehicle concierge, and what does The Baily Group do?',
+    answer: 'The Baily Group is a personal vehicle concierge led by Lawrence Baily. Instead of sending you to dealerships, we handle the whole process for you — searching, negotiating, financing, and paperwork — for personal and commercial vehicles across Guelph, Kitchener, Waterloo, and Cambridge.',
   },
   {
-    question: 'Who do you work with?',
+    question: 'Why use a vehicle concierge instead of going to a dealership myself?',
+    answer: 'You save time and skip the showroom pressure. We bring real market knowledge to every deal, negotiate on your behalf, and deliver the right vehicle to your door — so you avoid the lots, the back-and-forth, and the lost weekends.',
+  },
+  {
+    question: 'Who does The Baily Group work with?',
     answer: 'Busy professionals, growing families, and first-time buyers who would rather skip the dealership grind — plus local businesses that need commercial leases structured around how they operate.',
   },
   {
     question: 'Do you handle commercial and fleet vehicles?',
-    answer: 'Yes. We work with local businesses to structure leases for trucks and vans, and we hold fleet relationships with every domestic manufacturer — GM offers the most competitive advantages for our clients.',
+    answer: 'Yes. We structure commercial leases and purchases for trucks and vans, and we hold fleet relationships with every domestic manufacturer — where GM tends to offer our clients the strongest advantages.',
   },
   {
-    question: 'Which brands can you get?',
-    answer: 'Beyond our domestic fleet relationships, we work directly with BMW, Porsche, Land Rover, Jaguar, Volvo, Acura, and Lexus dealers, among others.',
+    question: 'Do you help with both new and used vehicles?',
+    answer: 'Both. Whether you want a brand-new build or a quality used vehicle, The Baily Group sources it, confirms it is priced fairly against the market, and manages the deal from search to delivery.',
+  },
+  {
+    question: 'Which vehicle brands can you get?',
+    answer: 'Beyond our domestic fleet relationships, we work directly with BMW, Porsche, Land Rover, Jaguar, Volvo, Acura, and Lexus dealers, among others — and we can source most makes and models on request.',
   },
   {
     question: 'Can you find a specific or hard-to-find vehicle?',
-    answer: 'Absolutely. Sourcing is one of our core services — tell us the make, model, and trim you want and we’ll track it down through our network.',
+    answer: 'Absolutely. Sourcing is one of our core services — tell us the exact make, model, trim, and colour you want, including allocation-only builds, and we will track it down through our dealer and manufacturer network.',
   },
   {
-    question: 'What area do you serve?',
+    question: 'What areas do you serve?',
     answer: 'We cover Guelph, Kitchener, Waterloo, Cambridge, and the surrounding southwestern Ontario communities. With Lawrence based in Guelph, local market knowledge is built in.',
   },
   {
-    question: 'How do I get started?',
-    answer: 'Reach out by phone or email and tell us what you’re looking for. We’ll take it from there and walk you all the way to the finish line.',
+    question: 'How long does the process take?',
+    answer: 'It depends on what you are after — a common in-stock vehicle can move quickly, while a specific or hard-to-find build takes longer. Either way, we keep you posted at every step and handle the details.',
+  },
+  {
+    question: 'How do I get started with The Baily Group?',
+    answer: 'Call or email Lawrence, or fill out the contact form, and tell us what you are looking for. We will take it from there and walk you all the way to delivery.',
   },
 ]
 
