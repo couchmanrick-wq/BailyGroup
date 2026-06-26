@@ -63,7 +63,18 @@ export default function Layout({
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
+    // Hysteresis: collapse past 90px, only re-expand below 10px. The dead
+    // zone is wider than the contact bar's height, so the layout shift from
+    // collapsing can't bounce the scroll position back across the threshold
+    // (which otherwise makes the header flip-flop / "shake").
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled((prev) => {
+        if (!prev && y > 90) return true
+        if (prev && y < 10) return false
+        return prev
+      })
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
