@@ -1533,6 +1533,34 @@ a.footerContactItem:hover {
   color: #ffffff;
 }
 
+.footerSocialGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.footerSocialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 0.85rem;
+  background: #002b52;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.footerSocialLink:hover {
+  background: #254b73;
+  transform: translateY(-1px);
+}
+
+.footerSocialIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 .footerDivider {
   margin: 2.5rem 0 1.75rem;
   border: none;

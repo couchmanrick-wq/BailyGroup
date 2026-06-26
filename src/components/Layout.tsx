@@ -274,6 +274,30 @@ export default function Layout({
                 <p className={styles.footerBlurb}>
                   The Baily Group: expert car buying concierge service, personalized auto buying help, dealer negotiation, lease guidance, financing, and vehicle sourcing across Kitchener, Waterloo, Cambridge, Guelph, and Southwestern Ontario.
                 </p>
+                <div className={styles.footerSocialGroup}>
+                  <a
+                    href="https://www.facebook.com/p/The-Baily-Group-61585101267711/"
+                    className={styles.footerSocialLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="The Baily Group on Facebook"
+                  >
+                    <svg className={styles.footerSocialIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.925-1.954 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/lawrencebaily/"
+                    className={styles.footerSocialLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="The Baily Group on LinkedIn"
+                  >
+                    <svg className={styles.footerSocialIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div>
@@ -319,32 +343,6 @@ export default function Layout({
                       <circle cx="12" cy="10" r="3" />
                     </svg>
                     Kitchener, Waterloo, Cambridge, Guelph & Southwestern Ontario
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/p/The-Baily-Group-61585101267711/"
-                      className={styles.footerContactItem}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.925-1.954 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
-                      </svg>
-                      Connect on Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/lawrencebaily/"
-                      className={styles.footerContactItem}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg className={styles.footerContactIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z" />
-                      </svg>
-                      Connect on LinkedIn
-                    </a>
                   </li>
                 </ul>
               </div>
