@@ -177,6 +177,24 @@
   position: relative;
   align-self: end;
   justify-self: center;
+  animation: heroSlideInRight 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes heroSlideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroDarkMedia {
+    animation: none;
+  }
 }
 
 .heroDarkMedia img {
