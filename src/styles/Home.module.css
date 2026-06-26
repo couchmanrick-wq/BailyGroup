@@ -278,8 +278,13 @@
   display: flex;
   gap: 1.75rem;
   flex-wrap: wrap;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #475569;
+}
+
+.nav a:hover {
+  color: #2f3c86;
 }
 
 .heroContent {
