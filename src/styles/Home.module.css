@@ -340,6 +340,14 @@
   display: block;
 }
 
+.mobileMenuToggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .mobileMenuButton {
   display: grid;
   place-content: center;
@@ -355,10 +363,6 @@
   list-style: none;
 }
 
-.mobileMenuButton::-webkit-details-marker {
-  display: none;
-}
-
 .mobileMenuLine {
   width: 1.25rem;
   height: 2px;
@@ -371,7 +375,7 @@
   top: calc(100% + 0.75rem);
   right: 0;
   z-index: 10;
-  display: grid;
+  display: none;
   min-width: 14rem;
   padding: 0.65rem;
   border: 1px solid rgba(148, 163, 184, 0.22);
@@ -381,6 +385,15 @@
   color: #475569;
   font-size: 1rem;
   font-weight: 650;
+}
+
+.mobileMenuToggle:checked ~ .mobileNav {
+  display: grid;
+}
+
+.mobileMenuToggle:checked + .mobileMenuButton {
+  border-color: rgba(194, 170, 102, 0.55);
+  color: #c2aa66;
 }
 
 .mobileNav a {

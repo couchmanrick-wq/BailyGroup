@@ -183,12 +183,18 @@ export default function Layout({
                 )
               })}
             </nav>
-            <details className={styles.mobileMenu}>
-              <summary className={styles.mobileMenuButton} aria-label="Open navigation menu">
+            <div className={styles.mobileMenu}>
+              <input
+                className={styles.mobileMenuToggle}
+                type="checkbox"
+                id="mobile-menu-toggle"
+                aria-label="Toggle navigation menu"
+              />
+              <label className={styles.mobileMenuButton} htmlFor="mobile-menu-toggle">
                 <span className={styles.mobileMenuLine} />
                 <span className={styles.mobileMenuLine} />
                 <span className={styles.mobileMenuLine} />
-              </summary>
+              </label>
               <nav className={styles.mobileNav} aria-label="Mobile navigation">
                 {navLinks.map((link) => {
                   const isActive = !link.href.includes('#') && router.pathname === link.href
@@ -204,7 +210,7 @@ export default function Layout({
                   )
                 })}
               </nav>
-            </details>
+            </div>
           </header>
         </div>
       <main className={`${styles.page} container`}>
