@@ -14,7 +14,7 @@ const contactPageSchema = {
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
-const vehicleUses = ['Daily Driver', 'Weekend Cruiser', 'Show/Collector Car', 'Investment/Flip']
+const vehicleUses = ['Daily Driver', 'Weekend Cruiser', 'Business Related']
 const purchaseTimelines = ['Immediately', 'Within 1 month', 'Within 3 months', 'Just exploring options']
 
 export default function Contact() {
@@ -103,13 +103,12 @@ export default function Contact() {
                 <label className={styles.formLabel} htmlFor="budget">
                   Budget Range
                 </label>
-                <select className={styles.formSelect} id="budget" name="budget" defaultValue="$20,000-$40,000">
-                  <option value="Under $20,000">Under $20,000</option>
-                  <option value="$20,000-$40,000">$20,000-$40,000</option>
-                  <option value="$40,000-$60,000">$40,000-$60,000</option>
-                  <option value="$60,000-$90,000">$60,000-$90,000</option>
-                  <option value="$90,000+">$90,000+</option>
-                  <option value="Not sure yet">Not sure yet</option>
+                <select className={styles.formSelect} id="budget" name="budget" defaultValue="Under $30,000">
+                  <option value="Under $30,000">Under $30,000</option>
+                  <option value="$30,000-$60,000">$30,000 to $60,000</option>
+                  <option value="$60,000-$100,000">$60,000 to $100,000</option>
+                  <option value="$200,000+">$200,000+</option>
+                  <option value="Not Sure Yet">Not Sure Yet</option>
                 </select>
               </div>
             </div>
