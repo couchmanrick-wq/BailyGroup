@@ -142,6 +142,15 @@
   font-weight: 800;
 }
 
+.heroTagline {
+  margin: -0.45rem 0 0;
+  max-width: 38rem;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 2.6vw, 1.8rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 .heroDarkSubtitle {
   margin: 0;
   max-width: 34rem;
