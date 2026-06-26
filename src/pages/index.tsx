@@ -38,8 +38,8 @@ export default function Home() {
               src="/images/baily-group-logo.webp"
               alt="The Baily Group"
               className={styles.logoMark}
-              width={56}
-              height={56}
+              width={112}
+              height={112}
             />
           </a>
           <nav className={styles.nav} aria-label="Primary navigation">
